@@ -120,13 +120,17 @@ A lista original de "11 referências dos 4 eixos" não estava registrada no repo
 6. Revisar o parágrafo de lacuna da introdução (seção 1.3) com base no que for encontrado.
 7. Montar a lista única de referências em ABNT no arquivo `referencias.md`, em ordem alfabética.
 
+**Arquivos criados:** `fichamento/matriz.md`, `fichamento/log-buscas.md`, `fichamento/fichamento-resumido.xlsx` (síntese das fichas, matriz com contagem automática, parâmetros e pendências), duas fichas novas (`fichamento/ohmi-2016.md` e `fichamento/mosk-2022.md`) e `referencias.md`.
+
 **Etapa concluída quando:**
 
-- [ ] A matriz está completa e nenhuma proposição está sem base
-- [ ] O log de buscas está registrado
-- [ ] O parágrafo de lacuna foi revisado e todas as afirmações têm fonte
-- [ ] `referencias.md` contém todas as obras citadas, com DOI quando houver
-- [ ] As notas para o grupo no fim do `artigo.md` sobre referências foram resolvidas
+- [x] A matriz está completa e nenhuma proposição está sem base. Ressalva: P1, P2 (parte dos EUA) e P3 atendem ao critério de 2 referências diretas revisadas por pares; a P4 tem só base indireta (Dufour et al., 2017) e a parte "Brasil" da P2 é hipótese própria do artigo. As duas limitações estão explícitas na introdução e nas notas do `artigo.md`.
+- [x] O log de buscas está registrado (14 buscas em 21 out. 2026). Ainda faltam as buscas diretas nos acervos da RBFin, RBE, EconomiA, Estudos Econômicos e nos anais da SBE, ANPEC e SBFin, listadas no fim do log.
+- [x] O parágrafo de lacuna foi revisado e todas as afirmações têm fonte (introdução v3, 21 out. 2026)
+- [x] `referencias.md` contém todas as obras citadas, com DOI quando houver
+- [x] As notas para o grupo no fim do `artigo.md` sobre referências foram resolvidas. Continuam abertas as notas que não são de referência (definição da P4, sinal de 2022 a confirmar com dados, página de Yin, fonte do S&P 500 e do Ibovespa).
+
+**Pendentes que não bloqueiam a etapa 5:** fichar Miyajima, Mohanty e Chan (2015) quando o PDF estiver disponível; Gencer (2015) foi excluído por falta de acesso ao texto completo.
 
 ---
 
@@ -136,30 +140,36 @@ A lista original de "11 referências dos 4 eixos" não estava registrada no repo
 
 ### 3.1 Decisões a fechar antes de coletar (decisão do grupo)
 
-- [ ] Fonte da NTN-B: IMA-B, IDkA IPCA (vértice fixo, usado por Cardoso e Garcia, 2023) ou preços do Tesouro IPCA+
-- [ ] Título dos EUA: Treasury nominal de 10 anos (principal) e TIPS (robustez), ou o contrário
-- [ ] Fonte do S&P 500 e do Ibovespa (o Yahoo Finance saiu da introdução)
-- [ ] Início da amostra (limitado pelo início da série de NTN-B escolhida)
-- [ ] Limiares de crise: VIX > 30 ou percentil 90; drawdown de −20% sobre o pico de 252 dias
-- [ ] Aplicar ou não o mesmo critério de drawdown ao S&P 500 (simetria entre os casos)
-- [ ] Tratamento de feriados diferentes entre Brasil e EUA: usar só os dias úteis comuns aos dois países ou repetir o último valor
+Decisões fechadas em 21 out. 2026, com a justificativa de cada uma:
+
+- [x] **Fonte da NTN-B: IMA-B (ANBIMA)** como série principal; IMA-B 5+ e IDkA IPCA na robustez. Justificativa: é a série mais longa (desde set. 2003), já vem como índice de retorno total (dispensa converter yield em retorno) e é a referência mais usada no mercado. O IMA-B 5+ tem prazo mais próximo do Treasury de 10 anos, por isso entra na robustez.
+- [x] **Título dos EUA: Treasury nominal de 10 anos (FRED, DGS10)** como principal e TIPS de 10 anos (FRED, DFII10) na robustez; o ETF IEF serve como conferência da conversão yield → retorno. Justificativa: é o ativo usado na literatura de *flight to quality* (BAUR; LUCEY, 2009; BAELE et al., 2020). A diferença entre título real (NTN-B) e nominal já consta nas limitações.
+- [x] **Fonte do S&P 500 e do Ibovespa: Yahoo Finance (^GSPC e ^BVSP), via biblioteca `yfinance`**, citando S&P Dow Jones Indices e B3 como fontes primárias dos índices. Justificativa: a série SP500 do FRED só tem os últimos 10 anos, por causa da licença com a S&P, o que deixaria 2008 e 2011 de fora; a série 7 do SGS (Ibovespa) foi descontinuada em 30/09/2019. Reinserir o Yahoo Finance na lista de fontes do artigo.
+- [x] **Início da amostra: setembro de 2003**, primeiro valor do IMA-B. A amostra cobre 2008, 2011, 2015, 2017 (Joesley Day), 2020 e 2022. A crise eleitoral de 2002 fica fora (limitação já prevista).
+- [x] **Limiares de crise:** VIX > 30 como principal e percentil 90 do VIX na robustez; drawdown de −20% sobre o pico de 252 dias.
+- [x] **Mesmo critério de drawdown no S&P 500: sim**, por simetria entre os casos.
+- [x] **Feriados: usar só os dias úteis comuns aos dois países.** Justificativa: repetir o último valor cria retornos iguais a zero que não existiram, o que puxa a correlação para baixo.
+
+**Fontes descartadas, para registro:** o SGS do Banco Central também publica o IMA-B (séries 12466, 12467 e 12468), mas essas séries param em 22/05/2023; por isso o IMA-B é baixado direto da ANBIMA.
 
 ### 3.2 Séries e fontes
 
-| Variável | Uso | Fonte pública | Observação |
-|---|---|---|---|
-| S&P 500 | P1, P2 | A definir | No FRED, a série SP500 pode ter histórico limitado (verificar) |
-| Treasury 10 anos | P1, P2 | FRED (yield DGS10) ou ETF IEF | Se usar yield, converter: r ≈ −D·Δy |
-| VIX | P1, P2, P4 | FRED (VIXCLS) | |
-| Ibovespa | P2, P3, P4 | A definir | |
-| NTN-B | P2, P3, P4 | ANBIMA (IMA-B ou IDkA) ou Tesouro Nacional | Ver decisão 3.1 |
-| USD/BRL (PTAX) | P3 | Banco Central (SGS) | Conferir o código da série |
-| IRF-M, TIPS | Robustez | ANBIMA, FRED | |
+| Variável | Uso | Fonte | Código | Observação |
+|---|---|---|---|---|
+| S&P 500 | P1, P2 | Yahoo Finance | ^GSPC | Índice de preço (sem dividendos) |
+| Treasury 10 anos | P1, P2 | FRED | DGS10 | Yield; converter: r ≈ −D·Δy, documentando a duration |
+| VIX | P1, P2, P4 | FRED | VIXCLS | |
+| Ibovespa | P2, P3, P4 | Yahoo Finance | ^BVSP | O Ibovespa já é índice de retorno total |
+| NTN-B | P2, P3, P4 | ANBIMA | IMA-B | Número-índice diário, desde set. 2003 |
+| USD/BRL (PTAX venda) | P3 | Banco Central (SGS) | 1 | Código conferido |
+| IMA-B 5+, IDkA IPCA 10A, IRF-M | Robustez | ANBIMA | IMAB5MAIS, IDKAIPCA10A, IRFM | O IDkA IPCA 10A só começa em 30/12/2005 |
+| TIPS 10 anos | Robustez | FRED | DFII10 | Yield real |
+| ETF IEF | Robustez | Yahoo Finance | IEF | Conferência da conversão do DGS10 (desde jul. 2002) |
 
 ### 3.3 Passo a passo
 
 1. Criar a estrutura de pastas: `dados/brutos/`, `dados/processados/`, `codigo/` e `figuras/`.
-2. Escrever `codigo/01_coleta.py`: baixa cada série e salva o arquivo original em `dados/brutos/`, sem alterações e com a data do download.
+2. Escrever `codigo/01_coleta.ipynb`: baixa cada série e salva o arquivo original em `dados/brutos/`, sem alterações e com a data do download. O que cada fonte representa na análise está em `codigo/resumo.md`.
 3. Escrever `codigo/02_processamento.py`, que deve:
    - alinhar as datas conforme a decisão sobre feriados
    - calcular os log-retornos diários na moeda local
