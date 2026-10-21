@@ -61,20 +61,40 @@ Este arquivo descreve o que fazer em cada etapa, o que ela entrega e quando ela 
 - **Revisado por:**
 ```
 
-**Confirmações pendentes nesta etapa:**
+**Arquivos criados (13 fichas, uma por referência):**
 
-- [ ] Molenaar et al. (2024): método de correlação e se a amostra inclui o Brasil
-- [ ] Connolly, Stivers e Sun (2005): confirmar que VIX mais alto está associado a correlação menor (base da P2)
-- [ ] Forbes e Rigobon (2002): referência completa e argumento do viés de volatilidade
-- [ ] Yin (2015): edição e editora usadas
-- [ ] Cardoso e Garcia (2023): verificar se foi publicado em periódico depois do evento
-- [ ] Silva, Bertella e Pereira (2014) e Martínez Arroyo e Marín Rodríguez (2021): verificar como tratam o Brasil
+| Arquivo | Eixo | Papel no artigo |
+|---|---|---|
+| `fichamento/baur-2009.md` | 1 | P1 |
+| `fichamento/baele-2020.md` | 1 | P1; contexto para P3 |
+| `fichamento/connolly-2005.md` | 1 | P2 |
+| `fichamento/campbell-2017.md` | 2 | contexto P1/P2; exploratória 2022 |
+| `fichamento/forbes-2002.md` | 2 | método (viés de volatilidade) |
+| `fichamento/molenaar-2024.md` | 2 | P3 e contraste EUA x Brasil; contexto P1 |
+| `fichamento/dufour-2017.md` | 3 | P3; base parcial para P4 |
+| `fichamento/hofmann-2020.md` | 3 | P3 (controle pelo câmbio) |
+| `fichamento/bianconi-2013.md` | 4 | contexto/lacuna (EMBI, não NTN-B) |
+| `fichamento/cardoso-2023.md` | 4 | contexto/lacuna (beta anual, sem crises) |
+| `fichamento/silva-2014.md` | 4 | contexto (Ibovespa e EMBI-BR; sem título doméstico) |
+| `fichamento/martinez-arroyo-2021.md` | 4 | contexto (CDS x título; sem ações) |
+| `fichamento/yin-2015.md` | método | desenho (replicação teórica) |
+
+A lista original de "11 referências dos 4 eixos" não estava registrada no repositório. Foram fichadas todas as obras citadas em `artigo.md` e neste plano (10 dos eixos + Yin + as 3 incluídas depois: Cardoso e Garcia, Bianconi et al. e Connolly et al.).
+
+**Confirmações desta etapa:**
+
+- [x] Molenaar et al. (2024): correlação de Spearman em janelas de 36 meses; a amostra inclui o Brasil desde jan. 2002 (código JGEMBBR); R² ajustado de 0,01 na Tabela 3. Ver `fichamento/molenaar-2024.md`.
+- [x] Connolly, Stivers e Sun (2005): CONFIRMADO. VIX mais alto está associado a correlação futura menor (Tabela 2: média 0,079 com VIX > 30 contra 0,340 incondicional; a2 = -0,208). Ver `fichamento/connolly-2005.md`.
+- [x] Forbes e Rigobon (2002): *The Journal of Finance*, v. 57, n. 5, p. 2223-2261, out. 2002. O coeficiente de correlação é condicional à volatilidade; ajuste ρ = ρ* / √(1 + δ[1 - (ρ*)²]). Ver `fichamento/forbes-2002.md`.
+- [x] Yin (2015): 5. ed., Porto Alegre: Bookman, 2015, trad. Cristhian Matheus Herrera, ISBN 978-85-8260-231-7. Texto integral da edição brasileira não acessado; conceitos conferidos na 5ª ed. inglesa (2014). Ver `fichamento/yin-2015.md`.
+- [x] Cardoso e Garcia (2023): não publicado em periódico até 21 out. 2026. Há versão revista nos anais do 24º EBFin (2024) e dissertação de mestrado na PUC-Rio. Citar a versão lida (45º EBE, 2023). Ver `fichamento/cardoso-2023.md`.
+- [x] Silva, Bertella e Pereira (2014): o Brasil é o objeto direto do estudo, mas não há série de título público doméstico; o EMBI-BR entra só como proxy de risco-país do Ibovespa. Martínez Arroyo e Marín Rodríguez (2021): o Brasil é um dos quatro países, no par CDS x título de 10 anos; ações não entram. Nenhum dos dois ameaça a lacuna. Ver as fichas correspondentes.
 
 **Etapa concluída quando:**
 
-- [ ] Todas as referências têm ficha com todos os campos preenchidos
-- [ ] Toda ficha passou por revisão cruzada
-- [ ] Cada ficha indica a proposição ou o papel que cumpre no artigo
+- [x] Todas as referências têm ficha com todos os campos preenchidos
+- [x] Toda ficha passou por revisão cruzada contra o texto-fonte (21 out. 2026); a assinatura de outro integrante do grupo ainda pode ser registrada no campo "Revisado por"
+- [x] Cada ficha indica a proposição ou o papel que cumpre no artigo
 
 ---
 
@@ -327,10 +347,20 @@ Supõe o prazo de 4 a 6 semanas a partir de agora. Ajustar às datas reais do gr
 
 | Etapa | Responsável | Revisor |
 |---|---|---|
-| 1. Fichamento | | |
+| 1. Fichamento | fichas prontas em `fichamento/` (13 arquivos) | conferência contra o texto-fonte em 21 out. 2026; assinatura humana a preencher em cada ficha |
 | 2. Lacunas e referências | | |
 | 3. Dados | | |
 | 4. Análise | | |
 | 5. Revisão da literatura | | |
 | 6. Desenvolvimento | | |
 | 7. Conclusão | | |
+
+Sugestão de divisão das 13 fichas entre 5 integrantes, para a assinatura do campo "Revisado por" (quem é de finanças fica com os eixos 1 e 2; quem é de outras áreas, com os textos mais descritivos):
+
+| Integrante | Lê / assina (eixos 1 e 2, finanças) | Lê / assina (eixos 3 e 4 e método) |
+|---|---|---|
+| A | Baur (2009), Baele et al. (2020), Connolly et al. (2005) | |
+| B | Campbell et al. (2017), Molenaar et al. (2024), Forbes e Rigobon (2002) | |
+| C | | Dufour et al. (2017), Hofmann et al. (2020), Bianconi et al. (2013) |
+| D | | Cardoso e Garcia (2023), Silva et al. (2014), Martínez Arroyo e Marín Rodríguez (2021) |
+| E | revisão cruzada das fichas de D | Yin (2015); revisão cruzada das fichas de A |

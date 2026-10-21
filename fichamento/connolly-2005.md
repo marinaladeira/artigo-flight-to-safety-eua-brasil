@@ -1,0 +1,46 @@
+# CONNOLLY; STIVERS; SUN (2005)
+
+- **Referência ABNT:** CONNOLLY, R.; STIVERS, C.; SUN, L. Stock market uncertainty and the stock-bond return relation. **Journal of Financial and Quantitative Analysis**, v. 40, n. 1, p. 161-194, mar. 2005. DOI: https://doi.org/10.1017/S0022109000001782.
+- **DOI ou link:** https://doi.org/10.1017/S0022109000001782 (metadados conferidos no Crossref e na página do periódico na Cambridge Core: v. 40, n. 1, p. 161-194, mar. 2005). Versão lida: preprint de 20 jun. 2003 aceito pelo JFQA (arquivo "jfqa_forthcoming"), no repositório institucional da UNC, Carolina Digital Repository: https://cdr.lib.unc.edu/downloads/gf06gc22x (registro: https://cdr.lib.unc.edu/concern/articles/t435gp450). Leitura integral do texto, tabelas e apêndices. As páginas citadas abaixo são as do manuscrito de 2003, não as do periódico. Os números das Tabelas 2 e 3 foram conferidos e são idênticos aos de uma versão posterior do manuscrito (16 mar. 2004, texto acessado via SciSpace); os números da Tabela 4 diferem levemente entre as versões (ver resultados). A versão publicada não foi acessada.
+- **Tipo:** artigo de periódico
+- **Eixo:** 1
+- **Objetivo do estudo:** Verificar se a variação no tempo da relação entre retornos diários de ações e de Treasuries está ligada a medidas de incerteza do mercado acionário que não derivam de retornos: a volatilidade implícita de opções de índice (VIX) e o turnover destendenciado das ações. Duas perguntas: (EQ1) o nível de incerteza prevê a correlação futura? (EQ2) a variação diária da incerteza está associada à relação contemporânea entre os retornos? (p. 2-3, 8-9).
+- **Dados e período:**
+  - EUA, dados diários de 1986 a 2000 (início determinado pela disponibilidade do VIX); subperíodos 1988-2000 (exclui o crash de 1987), jan. 1986 a jun. 1993 e jul. 1993 a dez. 2000 (p. 10).
+  - Ações: retorno ponderado por valor NYSE/AMEX/NASDAQ (CRSP). Títulos: Treasury de 10 anos (resultados reportados) e de 30 anos, retornos implícitos a partir dos yields de maturidade constante do Federal Reserve; robustez com futuros de Treasury da CBOT. 3.755 observações (p. 11).
+  - Incerteza: o VIX da CBOE da época, definido como a volatilidade implícita de uma opção at-the-money sobre o índice S&P 100 com 22 pregões até o vencimento (média ponderada de oito opções) (p. 10). Nota do fichador, que não consta do artigo: esse é o índice que a Cboe passou a divulgar como VXO em 2003, quando o VIX foi recalculado sobre o S&P 500. Turnover das ações do maior decil de tamanho (NYSE/AMEX) (p. 12-13).
+  - Apêndices: Alemanha (VDAX, 1992-2000) e demais países do G-7 (p. 32-34).
+- **Método:**
+  - Correlação futura de 22 pregões (dias t a t+21) condicionada ao VIX em t-1, calculada supondo média diária zero; 22 pregões porque é o horizonte das opções do VIX (p. 3, nota 3; p. 16).
+  - Regressão: B_t = a0 + (a1 + a2 ln(VIX_t-1) + a3 CV_t-1) S_t + ν_t, com erros de Newey-West (5 defasagens); CV é a correlação defasada de 22 dias (t-1 a t-22) ou dummy das crises asiática e russa (Eq. 5, p. 18; Tabela 3, p. 41-42). Robustez com GARCH(1,1) aumentado pelo VIX (p. 20).
+  - Variação diária do VIX: estatísticas e correlação por percentis da variação (Tabela 4, p. 43).
+  - Modelo de mudança de regime com dois estados, com probabilidades de transição constantes ou dependentes de ln(VIX_t-1) (p. 24-28).
+- **Principais resultados:**
+  - Correlação incondicional diária ações x Treasury de 10 anos de cerca de 0,22 a 0,25 (p. 12).
+  - Tabela 2 (p. 40), correlação futura de 22 pregões conforme o VIX em t-1 (amostra 1986-2000):
+    - Todos os dias: 15,62% das correlações negativas; média 0,340.
+    - VIX < 20: 6,08% negativas; média 0,415.
+    - VIX > 25: 36,47% negativas; média 0,177.
+    - VIX > 30 (n = 249): 46,59% negativas; média 0,079; mediana 0,050.
+    - VIX > 35: 48,78% negativas; média 0,084.
+    - VIX > 40: 53,85% negativas; média 0,062; mediana -0,051.
+  - Subperíodos: em jul. 1993 a dez. 2000, a probabilidade de correlação negativa sobe de 24,0% (incondicional) para 80,3% quando VIX > 30 e cai para 2,7% quando VIX < 20; em jan. 1986 a jun. 1993, sobe de 7,3% para 22,5% quando VIX > 35 (p. 16-17).
+  - Regressão (Tabela 3, Painel B, p. 41): a2 = -0,208 (t = -4,33) em 1986-2000, -0,355 (t = -8,68) em 1988-2000 e -0,513 (t = -10,48) em jul. 1993 a dez. 2000. Em 1988-2000, o coeficiente total de S_t é 0,360 no percentil 5 do VIX e 0,012 no percentil 95; em jul. 1993 a dez. 2000, 0,480 e -0,041 (p. 18-19).
+  - O efeito do VIX persiste controlando a correlação defasada de 22 dias (a2 = -0,136; t = -4,35) e as crises asiática e russa (a2 = -0,188; t = -5,39) (Tabela 3, Painéis C e D, p. 42; texto p. 19-20).
+  - Variação diária do VIX (Tabela 4, p. 43; texto p. 20): nos 5% maiores aumentos do VIX, correlação de -0,055 (0,112 nos 25% maiores), contra 0,223 incondicional; retorno médio das ações de -1,891% e dos títulos de -0,044%. Na versão de mar. 2004 esses valores aparecem como -0,069 e 0,101.
+  - Regimes: regime "normal" com correlação de 0,52 e regime de alta incerteza com correlação de cerca de -0,20 e volatilidade das ações muito maior (p. 26). VIX alto reduz a probabilidade de permanecer no regime normal; com VIX de 15%, a duração esperada do regime normal é de 53 dias e com VIX de 30%, de 16 dias (p. 27-28).
+  - A inflação não difere de forma significativa entre os regimes (p. 28).
+  - O padrão se repete na Alemanha: com VDAX no decil superior, 52,2% das correlações futuras são negativas, contra 0,0% no quartil inferior (p. 32). Nos demais países do G-7, a correlação cai nos regimes de alta incerteza dos EUA, exceto no Japão (p. 33-34).
+- **Relação com o artigo:**
+  - Sustenta P2.
+  - Pendência do grupo (VIX mais alto associado a correlação ações-títulos MENOR?): CONFIRMADO. A relação entre o VIX defasado e a correlação futura é negativa e estatisticamente forte (Tabela 2, p. 40; Tabela 3, p. 41-42; p. 3, 16-19).
+  - Medida de volatilidade: os autores usam o VIX antigo, sobre opções do S&P 100 (p. 10), não o VIX atual sobre o S&P 500. O artigo deve citar a medida como "VIX (na definição da época, baseada no S&P 100)" ao comparar limiares.
+  - Medida de correlação e janela: correlação futura de 22 pregões (t a t+21), com média suposta zero, mais regressão com interação ln(VIX) e modelo de regimes. Não usam janela de 63 dias.
+  - Veredito sobre a afirmação da introdução (P2, correlação como função decrescente da incerteza nos EUA): SUSTENTA para os EUA em 1986-2000. Ressalvas: (i) "decrescente" não significa "negativa": na amostra completa, a correlação média continua positiva mesmo com VIX > 30 (0,079), e só a mediana com VIX > 40 fica negativa (Tabela 2, p. 40); (ii) a amostra é de inflação baixa e estável, ponto enfatizado pelos autores (p. 10, 28), o que limita a extrapolação para 2022 (análise exploratória); (iii) o artigo não trata do Brasil nem de emergentes, então a parte "padrão que não se espera no Brasil" é hipótese própria do artigo, não sustentada nem refutada por esta referência; (iv) o padrão foi encontrado também na Alemanha e em quase todo o G-7 (p. 32-34), ou seja, vale para mercados desenvolvidos e não só para os EUA.
+- **Parâmetro que fornece:**
+  - Limiar VIX > 30 usado explicitamente na Tabela 2 (p. 40), junto com 20, 25, 35 e 40. Permite comparar diretamente com o critério de crise global do artigo (VIX > 30), lembrando a diferença entre o VIX antigo e o atual.
+  - Horizonte de 22 pregões para a correlação, justificado pelo prazo das opções do VIX (p. 3, nota 3).
+  - Especificação para testar P2: B_t = a0 + (a1 + a2 ln(VIX_t-1)) S_t + ν_t, com a2 < 0 indicando correlação decrescente na incerteza (Eq. 5, p. 18).
+  - Datas de crise usadas como controle: crise asiática de 1 out. a 31 dez. 1997 e crise russa de 6 jul. a 31 dez. 1998, seguindo Chordia, Sarkar e Subrahmanyam (2001) (p. 19).
+- **Citação direta útil:** "From a forward-looking perspective, we find a negative relation between the uncertainty measures and the future correlation of stock and bond returns." (CONNOLLY; STIVERS; SUN, 2005, resumo; na versão lida, resumo em página não numerada; o mesmo texto está no resumo publicado, p. 161).
+- **Revisado por:** conferido contra o texto-fonte (preprint UNC, 20 jun. 2003) em 21 out. 2026. Versão impressa do JFQA não acessada. Assinatura de outro integrante do grupo: a preencher.
