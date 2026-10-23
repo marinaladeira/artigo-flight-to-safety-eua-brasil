@@ -143,12 +143,14 @@ A lista original de "11 referências dos 4 eixos" não estava registrada no repo
 Decisões fechadas em 21 out. 2026, com a justificativa de cada uma:
 
 - [x] **Fonte da NTN-B: IMA-B (ANBIMA)** como série principal; IMA-B 5+ e IDkA IPCA na robustez. Justificativa: é a série mais longa (desde set. 2003), já vem como índice de retorno total (dispensa converter yield em retorno) e é a referência mais usada no mercado. O IMA-B 5+ tem prazo mais próximo do Treasury de 10 anos, por isso entra na robustez.
-- [x] **Título dos EUA: Treasury nominal de 10 anos (FRED, DGS10)** como principal e TIPS de 10 anos (FRED, DFII10) na robustez; o ETF IEF serve como conferência da conversão yield → retorno. Justificativa: é o ativo usado na literatura de *flight to quality* (BAUR; LUCEY, 2009; BAELE et al., 2020). A diferença entre título real (NTN-B) e nominal já consta nas limitações.
+- [x] **Título dos EUA: Treasury nominal de 10 anos (Federal Reserve, H.15, série `RIFLGFCY10_N.B`, equivalente ao DGS10 do FRED)** como principal e TIPS de 10 anos (H.15, `RIFLGFCY10_XII_N.B`, equivalente ao DFII10) na robustez; o ETF IEF serve como conferência da conversão yield → retorno. Justificativa: é o ativo usado na literatura de *flight to quality* (BAUR; LUCEY, 2009; BAELE et al., 2020). A diferença entre título real (NTN-B) e nominal já consta nas limitações.
 - [x] **Fonte do S&P 500 e do Ibovespa: Yahoo Finance (^GSPC e ^BVSP), via biblioteca `yfinance`**, citando S&P Dow Jones Indices e B3 como fontes primárias dos índices. Justificativa: a série SP500 do FRED só tem os últimos 10 anos, por causa da licença com a S&P, o que deixaria 2008 e 2011 de fora; a série 7 do SGS (Ibovespa) foi descontinuada em 30/09/2019. Reinserir o Yahoo Finance na lista de fontes do artigo.
 - [x] **Início da amostra: setembro de 2003**, primeiro valor do IMA-B. A amostra cobre 2008, 2011, 2015, 2017 (Joesley Day), 2020 e 2022. A crise eleitoral de 2002 fica fora (limitação já prevista).
 - [x] **Limiares de crise:** VIX > 30 como principal e percentil 90 do VIX na robustez; drawdown de −20% sobre o pico de 252 dias.
 - [x] **Mesmo critério de drawdown no S&P 500: sim**, por simetria entre os casos.
 - [x] **Feriados: usar só os dias úteis comuns aos dois países.** Justificativa: repetir o último valor cria retornos iguais a zero que não existiram, o que puxa a correlação para baixo.
+- [x] **Fontes primárias no lugar do FRED** (21 out. 2026): Treasury e TIPS do H.15 do Federal Reserve e VIX da Cboe. Justificativa: o FRED estava em manutenção sem previsão de volta, e ele apenas republica essas séries; os valores são os mesmos e a citação da fonte primária é mais forte.
+- [x] **Decisões do processamento** (seção 7 de `codigo/plano-processamento.md`): retorno do Treasury por reprecificação diária de um título de 10 anos ao par; data de corte fixa em 30/09/2026; câmbio de fechamento `BRL=X` como robustez da PTAX na P3; drawdown como definição principal de crise local, com três robustezes; crise para a P1 = VIX > 30 ou drawdown do S&P 500.
 
 **Fontes descartadas, para registro:** o SGS do Banco Central também publica o IMA-B (séries 12466, 12467 e 12468), mas essas séries param em 22/05/2023; por isso o IMA-B é baixado direto da ANBIMA.
 
@@ -157,20 +159,21 @@ Decisões fechadas em 21 out. 2026, com a justificativa de cada uma:
 | Variável | Uso | Fonte | Código | Observação |
 |---|---|---|---|---|
 | S&P 500 | P1, P2 | Yahoo Finance | ^GSPC | Índice de preço (sem dividendos) |
-| Treasury 10 anos | P1, P2 | FRED | DGS10 | Yield; converter: r ≈ −D·Δy, documentando a duration |
-| VIX | P1, P2, P4 | FRED | VIXCLS | |
+| Treasury 10 anos | P1, P2 | Federal Reserve (H.15) | RIFLGFCY10_N.B | Yield; retorno por reprecificação de título ao par (ver `codigo/plano-processamento.md`) |
+| VIX | P1, P2, P4 | Cboe | VIX_History.csv (CLOSE) | |
 | Ibovespa | P2, P3, P4 | Yahoo Finance | ^BVSP | O Ibovespa já é índice de retorno total |
 | NTN-B | P2, P3, P4 | ANBIMA | IMA-B | Número-índice diário, desde set. 2003 |
 | USD/BRL (PTAX venda) | P3 | Banco Central (SGS) | 1 | Código conferido |
 | IMA-B 5+, IDkA IPCA 10A, IRF-M | Robustez | ANBIMA | IMAB5MAIS, IDKAIPCA10A, IRFM | O IDkA IPCA 10A só começa em 30/12/2005 |
-| TIPS 10 anos | Robustez | FRED | DFII10 | Yield real |
-| ETF IEF | Robustez | Yahoo Finance | IEF | Conferência da conversão do DGS10 (desde jul. 2002) |
+| TIPS 10 anos | Robustez | Federal Reserve (H.15) | RIFLGFCY10_XII_N.B | Yield real |
+| ETF IEF | Robustez | Yahoo Finance | IEF | Conferência da conversão do yield em retorno (desde jul. 2002) |
+| USD/BRL de fechamento | Robustez (P3) | Yahoo Finance | BRL=X | Desde dez. 2003; observações com desvio > 5% da PTAX descartadas |
 
 ### 3.3 Passo a passo
 
 1. Criar a estrutura de pastas: `dados/brutos/`, `dados/processados/`, `codigo/` e `figuras/`.
 2. Escrever `codigo/01_coleta.ipynb`: baixa cada série e salva o arquivo original em `dados/brutos/`, sem alterações e com a data do download. O que cada fonte representa na análise está em `codigo/resumo.md`.
-3. Escrever `codigo/02_processamento.py`, que deve:
+3. Escrever `codigo/02_processamento.ipynb`, seguindo o diagnóstico e o plano detalhado em `codigo/plano-processamento.md`. O notebook deve:
    - alinhar as datas conforme a decisão sobre feriados
    - calcular os log-retornos diários na moeda local
    - converter yield em retorno, se for o caso, documentando a duration usada e a fonte
@@ -244,27 +247,25 @@ Decisões fechadas em 21 out. 2026, com a justificativa de cada uma:
 
 **Roda em paralelo com as etapas 3 e 4.** A revisão não depende dos resultados, mas deve estar pronta antes da etapa 6, porque a discussão compara resultados com a literatura.
 
-**Estrutura sugerida (organizada pelas proposições):**
+**Estrutura (organizada pelas proposições; revista em 21 out. 2026 para 3 a 5 parágrafos por subseção):**
 
-1. **2.1 Flight to quality e o papel do Treasury:** base da P1 e da P2
-2. **2.2 Instabilidade da correlação e natureza do choque:** contexto para 2022 (eixo 2)
-3. **2.3 Risco soberano e títulos de emergentes:** base da P3 e da P4
-4. **2.4 Evidência para o Brasil e a América Latina:** lacuna
-5. **2.5 Síntese:** quadro com as proposições, as referências que sustentam cada uma e o resultado esperado
+1. **2.1 Flight to quality e incerteza nos EUA (4 parágrafos):** base da P1 e da P2 (parte dos EUA). Rascunho v1 escrito.
+2. **2.2 Natureza do choque, risco soberano e o caso brasileiro (6 parágrafos):** junta as antigas 2.2 e 2.3 e condensa evidência do Brasil e lacuna num só parágrafo (decisões de 21 out. 2026). Mudança do sinal com o regime macroeconômico e contexto para 2022; viés de volatilidade (Forbes e Rigobon); base da P3, da P4 e da parte "Brasil" da P2; evidência para o Brasil e lacuna. Rascunho v1 escrito.
+3. **2.3 Síntese (1 parágrafo e quadro):** proposições, referências, tipo de base (direta ou indireta) e resultado esperado nos EUA e no Brasil. Rascunho v1 escrito (Quadro 1).
 
 **Passo a passo:**
 
 1. Redigir cada subseção a partir das fichas, nunca a partir da memória.
 2. Terminar cada subseção mostrando de onde sai a proposição correspondente.
-3. Montar o quadro-síntese da subseção 2.5.
-4. Conferir a numeração: a introdução cita "seção 3.2.5" para as proposições. Ajustar para a numeração real.
+3. Montar o quadro-síntese da subseção 2.3.
+4. Conferir a numeração: a introdução remete à seção 2.3 para as proposições (ajustado em 21 out. 2026).
 5. Revisar o estilo: parágrafos de 3 a 5 linhas, sem travessões, sem conectivos repetidos e com citações em ABNT.
 
 **Etapa concluída quando:**
 
-- [ ] Cada proposição é derivada explicitamente no texto
-- [ ] O quadro-síntese está pronto
-- [ ] Toda citação consta em `referencias.md`
+- [x] Cada proposição é derivada explicitamente no texto (P1 e P2 na 2.1; 2022, P3, P4 e parte "Brasil" da P2 na 2.2)
+- [x] O quadro-síntese está pronto (Quadro 1, seção 2.3)
+- [x] Toda citação consta em `referencias.md`
 - [ ] Um integrante de fora da área financeira leu e entendeu o texto
 
 ---
