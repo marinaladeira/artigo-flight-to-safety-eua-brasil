@@ -1,0 +1,45 @@
+# BIANCONI; YOSHINO; MACHADO DE SOUSA (2013)
+
+- **Referência ABNT:** BIANCONI, M.; YOSHINO, J. A.; MACHADO DE SOUSA, M. O. BRIC and the U.S. financial crisis: an empirical investigation of stock and bond markets. **Emerging Markets Review**, v. 14, p. 76-109, mar. 2013. DOI: https://doi.org/10.1016/j.ememar.2012.11.002.
+- **DOI ou link:** https://doi.org/10.1016/j.ememar.2012.11.002 (metadados conferidos no Crossref: v. 14, p. 76-109, mar. 2013, sem número de fascículo; disponível online em 5 dez. 2012). Versão lida: versão publicada (PDF do periódico, com paginação 76-109) no site do autor na Tufts University, https://mbiancon.pages.tufts.edu/B_Y_S_EMR_2013.pdf. As páginas citadas abaixo são as do periódico.
+- **Tipo:** artigo de periódico
+- **Eixo:** 4
+- **Objetivo do estudo:** Medir a transmissão do estresse financeiro dos EUA na crise de 2008 para os mercados de ações e de títulos dos BRIC, e verificar se esses países ficaram isolados do estresse americano, se oferecem diversificação e se podem sustentar o crescimento mundial (p. 77 e 107-108).
+- **Dados e período:**
+  - Países: Brasil, Rússia, Índia e China, com EUA como fonte do estresse (p. 80).
+  - Ações: índices locais (Ibovespa, Russian Trading System, Bombay Stock Exchange, Shanghai Stock Exchange), diários, de 2 jan. 2003 a 21 jul. 2010 (p. 80).
+  - Títulos: séries diárias do EMBI da JPMorgan para cada BRIC, de 31 jan. 2005 a 21 jul. 2010; os autores descrevem a série como "benchmark government bond yields" e informam que os índices são em dólares (p. 80). Não há títulos domésticos em moeda local.
+  - Estresse dos EUA: soma dos z-scores do VIX e do spread TED (p. 85; Figura 7, p. 86).
+  - Na estimação conjunta ações-títulos, 1.364 observações diárias (Tabela 11, p. 100).
+- **Método:**
+  - Heat maps de volatilidade não condicional (método do FMI), com z-scores relativos ao período-base 2003-2006 e média móvel de 30 dias (nota 14, p. 81).
+  - VARs de curto prazo em primeiras diferenças, ordenação guiada pelos heat maps (p. 85-89).
+  - Cointegração de Johansen e modelos de correção de erros (VECM) em log-níveis (p. 89-101).
+  - GARCH multivariado com distribuição t de Student e correlação condicional dinâmica (DCC) de Engle (2002), equação 2 (p. 92). Não há correlação móvel com janela fixa.
+  - Os "retornos" dos títulos são as primeiras diferenças do log do EMBI (variáveis "dlbr", "dlb_br" etc., Figuras 5, 9, 10 e 19, p. 83-104).
+- **Principais resultados:**
+  - Correlação incondicional entre ações e "retornos" do EMBI no Brasil: -0,486*** (Tabela 15, p. 106); Rússia: -0,265***; China e Índia: não significativas (p. 102 e 106).
+  - Correlação entre a variação do estresse dos EUA e o retorno das ações: Brasil -0,462***, Rússia -0,197***, Índia -0,129***, China não significativa (Tabela 5, p. 92).
+  - Correlação entre a variação do estresse dos EUA e o EMBI: Brasil 0,455***, Rússia 0,352***, China 0,196***, Índia não significativa (Tabela 10, p. 98).
+  - Nos VARs de curto prazo, ações reagem negativamente e o EMBI positivamente a um choque de estresse dos EUA, com efeitos de 1 a 2 dias (p. 89; Tabelas 16 e 17, p. 106-107).
+  - As correlações condicionais dinâmicas aumentam após a quebra do Lehman, exceto para o EMBI da Índia (p. 76, 102 e 107). O artigo data a quebra em 18 set. 2008 (p. 82-83).
+  - No longo prazo, os mercados de títulos se afastam mais da medida de estresse dos EUA do que ações e títulos dos BRIC entre si (p. 100-101 e 108).
+  - Como entra o EMBI (ponto crítico para o sinal): o texto trata a mesma série ora como taxa, ora como índice de retorno.
+    - Como taxa: "benchmark government bond yields" (p. 80), "EMBI rates" e "The EMBI rate encompasses both the country yield curve and country risk" (p. 83); a Figura 5b mostra "spreads" entre o EMBI e as taxas Fed funds e Libor (p. 83-84).
+    - Como retorno ou índice: "bond returns", "bond index" e "EMBI Return" (p. 87-88 e 96); na conclusão, "the BRIC bond markets respond positively in the very short term to the U.S. financial stress" (p. 107).
+    - Os autores leem o sinal como se o EMBI fosse retorno ("while the stocks react initially negatively, the bonds go in the opposite direction", p. 89), mas admitem que a correlação negativa "could be due partly to domestic interest rate effects and/or country risk effects" (p. 89).
+  - Como interpretar o sinal para o Brasil:
+    - Se o EMBI for taxa ou yield (leitura compatível com a descrição dos dados, p. 80 e 83), um aumento da variável indica queda do preço do título. Então a correlação de -0,486 significa que as ações caem quando o yield sobe, ou seja, ações e preços dos títulos andam juntos (correlação ações x preço dos títulos positiva), e a correlação de 0,455 com o estresse dos EUA significa que o estresse eleva o yield da dívida externa. O título se comportaria como ativo de risco, a favor da P3.
+    - Se o EMBI for índice de preço ou retorno (leitura dos autores na p. 89 e na conclusão, p. 107), a correlação de -0,486 indica flight to quality para a dívida externa brasileira em dólar, contra a P3.
+    - O texto não permite decidir entre as duas leituras sem consultar a série original da JPMorgan, o que não foi feito neste fichamento.
+- **Relação com o artigo:** Contexto para o eixo 4 (evidência para o Brasil). Não deve ser usado como evidência direta a favor ou contra a P3.
+  - Afirmação "Bianconi, Yoshino e Machado de Sousa (2013) estudam os BRIC na crise de 2008 com o EMBI, índice da dívida externa em dólar, e não com títulos domésticos": SUSTENTA (p. 80: EMBI da JPMorgan, "The sovereign bond indices are in U.S. dollars"). Ressalva: os próprios autores dizem que o EMBI contém informação da "domestic yield curve" e do risco-país (p. 89), mas o instrumento é dívida externa em dólar, e não título doméstico como a NTN-B.
+  - Decisão do grupo de não citar o sinal: CORRETA. O texto alterna entre tratar o EMBI como taxa e como retorno, e o sinal se inverte conforme a leitura. Se o grupo quiser citar o resultado, deve reportar o número (-0,486, Tabela 15, p. 106) junto com a ressalva sobre a definição da variável.
+  - Ressalvas adicionais: amostra curta para títulos (2005-2010), uma única crise de origem externa (EUA), estresse medido por VIX e TED combinados, e não por limiar de VIX.
+- **Parâmetro que fornece:**
+  - Medida de estresse dos EUA: z-score do VIX somado ao z-score do spread TED (p. 85).
+  - Índice de calor de volatilidade: média dos z-scores do retorno diário e do desvio padrão móvel de 30 dias, com base 2003-2006; faixas abaixo de 0,5, de 0,5 a 2, de 2 a 3 e acima de 3,5 desvios padrão segundo o texto (a legenda da Figura 4 indica "between 2 and 3.5") (nota 14, p. 81; p. 82).
+  - Marco da crise: quebra do Lehman Brothers em set. 2008, com pico de volatilidade entre set. e dez. 2008 (p. 82 e 85).
+  - Especificação DCC-GARCH com distribuição t de Student (p. 92).
+- **Citação direta útil:** "Stock and bond return correlations for Brazil and Russia are significantly large and negative." (p. 76, resumo). Também: "The bond index measure EMBI contains information of the domestic yield curve and the country risk." (p. 89).
+- **Revisado por:** conferido contra o texto-fonte (Emerging Markets Review, p. 76-109) em 21 out. 2026. Assinatura de outro integrante do grupo: a preencher.

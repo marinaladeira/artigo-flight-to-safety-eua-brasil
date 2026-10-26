@@ -1,0 +1,15 @@
+regime,descrição,dias,% da amostra,episódios,maior episódio (dias)
+crise_global,VIX > 30,422,7.6,51,161
+crise_global_p90,VIX > percentil 90,553,10.0,71,186
+crise_local_br,Drawdown do Ibovespa ≤ −20%,729,13.2,59,222
+crise_eua,Drawdown do S&P 500 ≤ −20%,314,5.7,20,225
+crise_p1_eua,Crise EUA para a P1 (VIX > 30 ou drawdown do S&P 500),524,9.5,57,234
+normal,Normal,4686,84.8,81,482
+so_global,Só crise global,111,2.0,39,10
+so_local,Só crise local,418,7.6,66,60
+ambas,Crise local e global,311,5.6,29,161
+so_local_p90,Só crise local (VIX p90) – robustez,378,6.8,58,46
+so_local_sem_cauda,Só crise local sem cauda de crise global – robustez (a),296,5.4,36,53
+crise_local_fixa,Lista fixa de eventos locais – robustez (b),84,1.5,4,21
+choque_local_br,Choque de 21 pregões no Ibovespa,277,5.0,62,25
+so_local_choque,Choque local sem crise global – robustez (c),182,3.3,48,19

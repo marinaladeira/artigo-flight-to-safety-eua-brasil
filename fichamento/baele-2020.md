@@ -1,0 +1,42 @@
+# BAELE et al. (2020)
+
+- **Referência ABNT:** BAELE, L.; BEKAERT, G.; INGHELBRECHT, K.; WEI, M. Flights to safety. **The Review of Financial Studies**, v. 33, n. 2, p. 689-746, fev. 2020. DOI: https://doi.org/10.1093/rfs/hhz055.
+- **DOI ou link:** https://doi.org/10.1093/rfs/hhz055 (metadados conferidos no Crossref e no RePEc/IDEAS: v. 33, n. 2, p. 689-746, fev. 2020; publicação online em 7 jun. 2019). Versão lida: texto principal integral no working paper NBER n. 19095, revisão de maio de 2019 (https://www.nber.org/system/files/working_papers/w19095/w19095.pdf), com conferência de todos os trechos, números e páginas citados aqui na versão publicada da RFS (PDF hospedado pela Columbia Business School: https://business.columbia.edu/sites/default/files-efs/citation_file_upload/Flights%20to%20Safety.pdf). A paginação abaixo é a da RFS.
+- **Tipo:** artigo de periódico
+- **Eixo:** 1
+- **Objetivo do estudo:** Definir, identificar e caracterizar dias de flight to safety (FTS) em 23 países usando apenas retornos diários de ações (o ativo de risco prototípico) e do título público de referência (o ativo seguro e líquido prototípico), e examinar suas consequências para fluxos de fundos, qualidade versus liquidez, mercados emergentes e estratégias de hedge (p. 690-691).
+- **Dados e período:**
+  - Retornos diários de índices totais de ações (Datastream) e de títulos públicos de 10 anos de referência, em moeda local, para 23 países desenvolvidos, de janeiro de 1980 a junho de 2015 (p. 696).
+  - Países: EUA, Canadá, 18 europeus, Austrália, Japão e Nova Zelândia. Para os países europeus, exceto Dinamarca, Noruega, Suíça e Reino Unido, o título de referência é o alemão (p. 696).
+  - Emergentes (seção 4): 25 mercados acionários emergentes, incluindo o Brasil, com retornos em dólar, em geral a partir do início dos anos 1990 (p. 728). Para títulos de emergentes, usa o EMBI do JP Morgan (Brady bonds denominados em dólar) para a maioria dos países, inclusive o Brasil (p. 729).
+  - Outros dados: fluxos de fundos mútuos dos EUA (Lipper, desde 1992), VIX e outros índices de volatilidade implícita, spread TED, ouro, moedas de refúgio (p. 715-719).
+- **Método:**
+  - Definição de FTS por três critérios: (1) retorno grande e positivo do título junto com retorno grande e negativo da ação; (2) correlação de alta frequência negativa entre títulos e ações; (3) estresse de mercado, medido por alta volatilidade das ações (p. 690).
+  - Modelo 1: modelo bivariado de mudança de regime (regime-switching) com regimes de volatilidade de ações, de títulos e de FTS, estimado por máxima verossimilhança; a correlação condicional tem um componente de longo prazo calculado por kernel gaussiano retroativo com banda de 360 dias, excluindo os 5 dias mais recentes (p. 695-696).
+  - Modelo 2: modelo de limiar inspirado em correlação de exceedance, calibrado para a mesma incidência de FTS do modelo 1 (4,66%), com κ = 1,26 (p. 705).
+  - Modelo 3: índice ordinal com três indicadores (diferença de retorno título menos ação, queda da correlação de curto prazo em relação à de longo prazo, pico de volatilidade), com kernels de 360 e 7 dias; κ = 1,72 para a razão entre volatilidade de curto e de longo prazo (p. 706-707).
+  - Combinação dos três modelos por distribuição de Bernoulli multivariada (TEUGELS, 1990); o dia é FTS quando a probabilidade conjunta supera 50% (p. 709).
+  - Não usa correlação móvel com janela fixa como medida principal.
+- **Principais resultados:**
+  - Incidência de FTS: 1,74% dos dias na média entre países (intervalo interquartil 1,55% a 2,09%). Nos dias de FTS, as ações caem 2,29% e os títulos públicos sobem 0,43% em média (p. 710; Tabela 6, p. 711).
+  - EUA (Tabela 6, p. 711): incidência de 2,27%, retorno médio das ações de -2,02% e dos títulos de +0,54% nos dias de FTS.
+  - Correlação ações x títulos (modelo de regimes): média de -58,5% nos dias de FTS (intervalo interquartil -57,0% a -62,5%) contra -4,18% nos dias sem FTS (p. 702-703). Parâmetro θFTS = -1,338, que sozinho implicaria correlação de -56,8% no regime de FTS (p. 699).
+  - Os episódios são curtos: 62% duram 1 dia, 23% duram 2 dias, nenhum passa de 10 dias (p. 713, 740).
+  - FTS não é o mesmo que alta volatilidade: só 21,6% dos dias de FTS coincidem com os dias de maior volatilidade das ações (kernel de 5 dias), e menos de 20% com kernel de 25 dias (p. 710-711). Nos EUA, só 21% dos dias de FTS ocorrem em recessões do NBER (p. 711).
+  - O VIX sobe em média 3,18% num dia de FTS nos EUA; o efeito da volatilidade implícita é significativo a 5% em todos os países (p. 717).
+  - Fluxos nos EUA: saídas de fundos de ações e de high yield e entradas em fundos de money market só de governo; com dados mensais, também entradas significativas em fundos de Treasury. Numa semana só com dias de FTS, o patrimônio dos fundos de títulos sobe 0,50% (p. 719, 740).
+  - Emergentes: ações emergentes caem além do previsto por sua exposição ao mercado global em FTS globais (efeito médio entre -0,97% e -2,46%, conforme a definição de FTS global) (p. 729-730). Títulos soberanos emergentes em dólar têm betas de FTS negativos (-0,12% a -0,24%), significativos em no máximo 7 de 24 países; os autores concluem que eles se comportam como ativos de risco típicos (p. 731).
+- **Relação com o artigo:**
+  - Sustenta P1 e dá contexto para P3.
+  - Veredito sobre a afirmação da introdução ("espera-se que a correlação [...] se torne negativa justamente quando a proteção é mais necessária"): SUSTENTA para os dias de FTS em países desenvolvidos (correlação média de -58,5%). Ressalvas: (i) a correlação negativa é um dos critérios que definem o FTS, então o resultado é em parte construído pela definição; (ii) os episódios duram poucos dias, enquanto o artigo usa correlação móvel de 63 dias, que pode diluir o efeito; (iii) os próprios autores mostram que FTS não coincide com períodos de alta volatilidade em sua maioria (sobreposição de 21,6%), logo crise definida por VIX > 30 não equivale a FTS.
+  - Sobre "Treasuries como principal destino do flight to quality": SUSTENTA EM PARTE. O artigo trata o título público de referência como "the prototypical safe and liquid asset" (p. 690) e documenta entradas em fundos de Treasury nos EUA (p. 719), mas os autores afirmam que a ideia de os títulos americanos serem o ativo seguro global é "problematic" por causa do risco cambial (p. 726), e para a maior parte da Europa o ativo seguro usado é o título alemão (p. 696).
+  - Para P3: apoio conceitual, pois os autores afirmam que títulos soberanos de emergentes não funcionam como ativo seguro por risco de default e de câmbio e se comportam como ativos de risco (p. 726, 731). Porém a evidência é para EMBI em dólar (não para NTN-B em reais), em FTS globais (não em crises locais) e com significância em poucos países. Não trata de P4 nem de 2022.
+- **Parâmetro que fornece:**
+  - Definição de FTS em três critérios (p. 690), útil para justificar o uso conjunto de queda de ações, alta de títulos e correlação negativa.
+  - Kernels gaussianos retroativos: 360 dias (longo prazo, excluindo os últimos 5 dias) e 7 dias (curto prazo) (p. 695, 706); razão de volatilidade de curto sobre longo prazo de 1,72 como limiar de estresse no modelo ordinal (p. 707).
+  - Definições de FTS global: pelo menos 50% dos países em FTS; modelo aplicado a ações globais e títulos AAA; ou FTS dos EUA como proxy do FTS global, com incidências de 0,80%, 2,36% e 2,62% (p. 727). A terceira opção é diretamente aplicável ao caso Brasil (choque global medido pelos EUA).
+  - Regra de classificação: dia de FTS quando a probabilidade conjunta supera 50% (p. 709).
+- **Citação direta útil:**
+  - "the prototypical safe and liquid asset (the benchmark Treasury security)" (BAELE et al., 2020, p. 690).
+  - "These sovereign bonds cannot function as a “safe asset” for these emerging markets due to default and exchange rate risks" (BAELE et al., 2020, p. 726).
+- **Revisado por:** conferido contra o texto-fonte (RFS, p. 689-746, e NBER WP 19095) em 21 out. 2026. Assinatura de outro integrante do grupo: a preencher.

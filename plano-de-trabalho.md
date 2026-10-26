@@ -61,20 +61,40 @@ Este arquivo descreve o que fazer em cada etapa, o que ela entrega e quando ela 
 - **Revisado por:**
 ```
 
-**Confirmações pendentes nesta etapa:**
+**Arquivos criados (13 fichas, uma por referência):**
 
-- [ ] Molenaar et al. (2024): método de correlação e se a amostra inclui o Brasil
-- [ ] Connolly, Stivers e Sun (2005): confirmar que VIX mais alto está associado a correlação menor (base da P2)
-- [ ] Forbes e Rigobon (2002): referência completa e argumento do viés de volatilidade
-- [ ] Yin (2015): edição e editora usadas
-- [ ] Cardoso e Garcia (2023): verificar se foi publicado em periódico depois do evento
-- [ ] Silva, Bertella e Pereira (2014) e Martínez Arroyo e Marín Rodríguez (2021): verificar como tratam o Brasil
+| Arquivo | Eixo | Papel no artigo |
+|---|---|---|
+| `fichamento/baur-2009.md` | 1 | P1 |
+| `fichamento/baele-2020.md` | 1 | P1; contexto para P3 |
+| `fichamento/connolly-2005.md` | 1 | P2 |
+| `fichamento/campbell-2017.md` | 2 | contexto P1/P2; exploratória 2022 |
+| `fichamento/forbes-2002.md` | 2 | método (viés de volatilidade) |
+| `fichamento/molenaar-2024.md` | 2 | P3 e contraste EUA x Brasil; contexto P1 |
+| `fichamento/dufour-2017.md` | 3 | P3; base parcial para P4 |
+| `fichamento/hofmann-2020.md` | 3 | P3 (controle pelo câmbio) |
+| `fichamento/bianconi-2013.md` | 4 | contexto/lacuna (EMBI, não NTN-B) |
+| `fichamento/cardoso-2023.md` | 4 | contexto/lacuna (beta anual, sem crises) |
+| `fichamento/silva-2014.md` | 4 | contexto (Ibovespa e EMBI-BR; sem título doméstico) |
+| `fichamento/martinez-arroyo-2021.md` | 4 | contexto (CDS x título; sem ações) |
+| `fichamento/yin-2015.md` | método | desenho (replicação teórica) |
+
+A lista original de "11 referências dos 4 eixos" não estava registrada no repositório. Foram fichadas todas as obras citadas em `artigo.md` e neste plano (10 dos eixos + Yin + as 3 incluídas depois: Cardoso e Garcia, Bianconi et al. e Connolly et al.).
+
+**Confirmações desta etapa:**
+
+- [x] Molenaar et al. (2024): correlação de Spearman em janelas de 36 meses; a amostra inclui o Brasil desde jan. 2002 (código JGEMBBR); R² ajustado de 0,01 na Tabela 3. Ver `fichamento/molenaar-2024.md`.
+- [x] Connolly, Stivers e Sun (2005): CONFIRMADO. VIX mais alto está associado a correlação futura menor (Tabela 2: média 0,079 com VIX > 30 contra 0,340 incondicional; a2 = -0,208). Ver `fichamento/connolly-2005.md`.
+- [x] Forbes e Rigobon (2002): *The Journal of Finance*, v. 57, n. 5, p. 2223-2261, out. 2002. O coeficiente de correlação é condicional à volatilidade; ajuste ρ = ρ* / √(1 + δ[1 - (ρ*)²]). Ver `fichamento/forbes-2002.md`.
+- [x] Yin (2015): 5. ed., Porto Alegre: Bookman, 2015, trad. Cristhian Matheus Herrera, ISBN 978-85-8260-231-7. Texto integral da edição brasileira não acessado; conceitos conferidos na 5ª ed. inglesa (2014). Ver `fichamento/yin-2015.md`.
+- [x] Cardoso e Garcia (2023): não publicado em periódico até 21 out. 2026. Há versão revista nos anais do 24º EBFin (2024) e dissertação de mestrado na PUC-Rio. Citar a versão lida (45º EBE, 2023). Ver `fichamento/cardoso-2023.md`.
+- [x] Silva, Bertella e Pereira (2014): o Brasil é o objeto direto do estudo, mas não há série de título público doméstico; o EMBI-BR entra só como proxy de risco-país do Ibovespa. Martínez Arroyo e Marín Rodríguez (2021): o Brasil é um dos quatro países, no par CDS x título de 10 anos; ações não entram. Nenhum dos dois ameaça a lacuna. Ver as fichas correspondentes.
 
 **Etapa concluída quando:**
 
-- [ ] Todas as referências têm ficha com todos os campos preenchidos
-- [ ] Toda ficha passou por revisão cruzada
-- [ ] Cada ficha indica a proposição ou o papel que cumpre no artigo
+- [x] Todas as referências têm ficha com todos os campos preenchidos
+- [x] Toda ficha passou por revisão cruzada contra o texto-fonte (21 out. 2026); a assinatura de outro integrante do grupo ainda pode ser registrada no campo "Revisado por"
+- [x] Cada ficha indica a proposição ou o papel que cumpre no artigo
 
 ---
 
@@ -100,13 +120,17 @@ Este arquivo descreve o que fazer em cada etapa, o que ela entrega e quando ela 
 6. Revisar o parágrafo de lacuna da introdução (seção 1.3) com base no que for encontrado.
 7. Montar a lista única de referências em ABNT no arquivo `referencias.md`, em ordem alfabética.
 
+**Arquivos criados:** `fichamento/matriz.md`, `fichamento/log-buscas.md`, `fichamento/fichamento-resumido.xlsx` (síntese das fichas, matriz com contagem automática, parâmetros e pendências), duas fichas novas (`fichamento/ohmi-2016.md` e `fichamento/mosk-2022.md`) e `referencias.md`.
+
 **Etapa concluída quando:**
 
-- [ ] A matriz está completa e nenhuma proposição está sem base
-- [ ] O log de buscas está registrado
-- [ ] O parágrafo de lacuna foi revisado e todas as afirmações têm fonte
-- [ ] `referencias.md` contém todas as obras citadas, com DOI quando houver
-- [ ] As notas para o grupo no fim do `artigo.md` sobre referências foram resolvidas
+- [x] A matriz está completa e nenhuma proposição está sem base. Ressalva: P1, P2 (parte dos EUA) e P3 atendem ao critério de 2 referências diretas revisadas por pares; a P4 tem só base indireta (Dufour et al., 2017) e a parte "Brasil" da P2 é hipótese própria do artigo. As duas limitações estão explícitas na introdução e nas notas do `artigo.md`.
+- [x] O log de buscas está registrado (14 buscas em 21 out. 2026). Ainda faltam as buscas diretas nos acervos da RBFin, RBE, EconomiA, Estudos Econômicos e nos anais da SBE, ANPEC e SBFin, listadas no fim do log.
+- [x] O parágrafo de lacuna foi revisado e todas as afirmações têm fonte (introdução v3, 21 out. 2026)
+- [x] `referencias.md` contém todas as obras citadas, com DOI quando houver
+- [x] As notas para o grupo no fim do `artigo.md` sobre referências foram resolvidas. Continuam abertas as notas que não são de referência (definição da P4, sinal de 2022 a confirmar com dados, página de Yin, fonte do S&P 500 e do Ibovespa).
+
+**Pendentes que não bloqueiam a etapa 5:** fichar Miyajima, Mohanty e Chan (2015) quando o PDF estiver disponível; Gencer (2015) foi excluído por falta de acesso ao texto completo.
 
 ---
 
@@ -116,31 +140,40 @@ Este arquivo descreve o que fazer em cada etapa, o que ela entrega e quando ela 
 
 ### 3.1 Decisões a fechar antes de coletar (decisão do grupo)
 
-- [ ] Fonte da NTN-B: IMA-B, IDkA IPCA (vértice fixo, usado por Cardoso e Garcia, 2023) ou preços do Tesouro IPCA+
-- [ ] Título dos EUA: Treasury nominal de 10 anos (principal) e TIPS (robustez), ou o contrário
-- [ ] Fonte do S&P 500 e do Ibovespa (o Yahoo Finance saiu da introdução)
-- [ ] Início da amostra (limitado pelo início da série de NTN-B escolhida)
-- [ ] Limiares de crise: VIX > 30 ou percentil 90; drawdown de −20% sobre o pico de 252 dias
-- [ ] Aplicar ou não o mesmo critério de drawdown ao S&P 500 (simetria entre os casos)
-- [ ] Tratamento de feriados diferentes entre Brasil e EUA: usar só os dias úteis comuns aos dois países ou repetir o último valor
+Decisões fechadas em 21 out. 2026, com a justificativa de cada uma:
+
+- [x] **Fonte da NTN-B: IMA-B (ANBIMA)** como série principal; IMA-B 5+ e IDkA IPCA na robustez. Justificativa: é a série mais longa (desde set. 2003), já vem como índice de retorno total (dispensa converter yield em retorno) e é a referência mais usada no mercado. O IMA-B 5+ tem prazo mais próximo do Treasury de 10 anos, por isso entra na robustez.
+- [x] **Título dos EUA: Treasury nominal de 10 anos (Federal Reserve, H.15, série `RIFLGFCY10_N.B`, equivalente ao DGS10 do FRED)** como principal e TIPS de 10 anos (H.15, `RIFLGFCY10_XII_N.B`, equivalente ao DFII10) na robustez; o ETF IEF serve como conferência da conversão yield → retorno. Justificativa: é o ativo usado na literatura de *flight to quality* (BAUR; LUCEY, 2009; BAELE et al., 2020). A diferença entre título real (NTN-B) e nominal já consta nas limitações.
+- [x] **Fonte do S&P 500 e do Ibovespa: Yahoo Finance (^GSPC e ^BVSP), via biblioteca `yfinance`**, citando S&P Dow Jones Indices e B3 como fontes primárias dos índices. Justificativa: a série SP500 do FRED só tem os últimos 10 anos, por causa da licença com a S&P, o que deixaria 2008 e 2011 de fora; a série 7 do SGS (Ibovespa) foi descontinuada em 30/09/2019. Reinserir o Yahoo Finance na lista de fontes do artigo.
+- [x] **Início da amostra: setembro de 2003**, primeiro valor do IMA-B. A amostra cobre 2008, 2011, 2015, 2017 (Joesley Day), 2020 e 2022. A crise eleitoral de 2002 fica fora (limitação já prevista).
+- [x] **Limiares de crise:** VIX > 30 como principal e percentil 90 do VIX na robustez; drawdown de −20% sobre o pico de 252 dias.
+- [x] **Mesmo critério de drawdown no S&P 500: sim**, por simetria entre os casos.
+- [x] **Feriados: usar só os dias úteis comuns aos dois países.** Justificativa: repetir o último valor cria retornos iguais a zero que não existiram, o que puxa a correlação para baixo.
+- [x] **Fontes primárias no lugar do FRED** (21 out. 2026): Treasury e TIPS do H.15 do Federal Reserve e VIX da Cboe. Justificativa: o FRED estava em manutenção sem previsão de volta, e ele apenas republica essas séries; os valores são os mesmos e a citação da fonte primária é mais forte.
+- [x] **Decisões do processamento** (seção 7 de `codigo/plano-processamento.md`): retorno do Treasury por reprecificação diária de um título de 10 anos ao par; data de corte fixa em 30/09/2026; câmbio de fechamento `BRL=X` como robustez da PTAX na P3; drawdown como definição principal de crise local, com três robustezes; crise para a P1 = VIX > 30 ou drawdown do S&P 500.
+
+**Fontes descartadas, para registro:** o SGS do Banco Central também publica o IMA-B (séries 12466, 12467 e 12468), mas essas séries param em 22/05/2023; por isso o IMA-B é baixado direto da ANBIMA.
 
 ### 3.2 Séries e fontes
 
-| Variável | Uso | Fonte pública | Observação |
-|---|---|---|---|
-| S&P 500 | P1, P2 | A definir | No FRED, a série SP500 pode ter histórico limitado (verificar) |
-| Treasury 10 anos | P1, P2 | FRED (yield DGS10) ou ETF IEF | Se usar yield, converter: r ≈ −D·Δy |
-| VIX | P1, P2, P4 | FRED (VIXCLS) | |
-| Ibovespa | P2, P3, P4 | A definir | |
-| NTN-B | P2, P3, P4 | ANBIMA (IMA-B ou IDkA) ou Tesouro Nacional | Ver decisão 3.1 |
-| USD/BRL (PTAX) | P3 | Banco Central (SGS) | Conferir o código da série |
-| IRF-M, TIPS | Robustez | ANBIMA, FRED | |
+| Variável | Uso | Fonte | Código | Observação |
+|---|---|---|---|---|
+| S&P 500 | P1, P2 | Yahoo Finance | ^GSPC | Índice de preço (sem dividendos) |
+| Treasury 10 anos | P1, P2 | Federal Reserve (H.15) | RIFLGFCY10_N.B | Yield; retorno por reprecificação de título ao par (ver `codigo/plano-processamento.md`) |
+| VIX | P1, P2, P4 | Cboe | VIX_History.csv (CLOSE) | |
+| Ibovespa | P2, P3, P4 | Yahoo Finance | ^BVSP | O Ibovespa já é índice de retorno total |
+| NTN-B | P2, P3, P4 | ANBIMA | IMA-B | Número-índice diário, desde set. 2003 |
+| USD/BRL (PTAX venda) | P3 | Banco Central (SGS) | 1 | Código conferido |
+| IMA-B 5+, IDkA IPCA 10A, IRF-M | Robustez | ANBIMA | IMAB5MAIS, IDKAIPCA10A, IRFM | O IDkA IPCA 10A só começa em 30/12/2005 |
+| TIPS 10 anos | Robustez | Federal Reserve (H.15) | RIFLGFCY10_XII_N.B | Yield real |
+| ETF IEF | Robustez | Yahoo Finance | IEF | Conferência da conversão do yield em retorno (desde jul. 2002) |
+| USD/BRL de fechamento | Robustez (P3) | Yahoo Finance | BRL=X | Desde dez. 2003; observações com desvio > 5% da PTAX descartadas |
 
 ### 3.3 Passo a passo
 
 1. Criar a estrutura de pastas: `dados/brutos/`, `dados/processados/`, `codigo/` e `figuras/`.
-2. Escrever `codigo/01_coleta.py`: baixa cada série e salva o arquivo original em `dados/brutos/`, sem alterações e com a data do download.
-3. Escrever `codigo/02_processamento.py`, que deve:
+2. Escrever `codigo/01_coleta.ipynb`: baixa cada série e salva o arquivo original em `dados/brutos/`, sem alterações e com a data do download. O que cada fonte representa na análise está em `codigo/resumo.md`.
+3. Escrever `codigo/02_processamento.ipynb`, seguindo o diagnóstico e o plano detalhado em `codigo/plano-processamento.md`. O notebook deve:
    - alinhar as datas conforme a decisão sobre feriados
    - calcular os log-retornos diários na moeda local
    - converter yield em retorno, se for o caso, documentando a duration usada e a fonte
@@ -214,27 +247,25 @@ Este arquivo descreve o que fazer em cada etapa, o que ela entrega e quando ela 
 
 **Roda em paralelo com as etapas 3 e 4.** A revisão não depende dos resultados, mas deve estar pronta antes da etapa 6, porque a discussão compara resultados com a literatura.
 
-**Estrutura sugerida (organizada pelas proposições):**
+**Estrutura (organizada pelas proposições; revista em 21 out. 2026 para 3 a 5 parágrafos por subseção):**
 
-1. **2.1 Flight to quality e o papel do Treasury:** base da P1 e da P2
-2. **2.2 Instabilidade da correlação e natureza do choque:** contexto para 2022 (eixo 2)
-3. **2.3 Risco soberano e títulos de emergentes:** base da P3 e da P4
-4. **2.4 Evidência para o Brasil e a América Latina:** lacuna
-5. **2.5 Síntese:** quadro com as proposições, as referências que sustentam cada uma e o resultado esperado
+1. **2.1 Flight to quality e incerteza nos EUA (4 parágrafos):** base da P1 e da P2 (parte dos EUA). Rascunho v1 escrito.
+2. **2.2 Natureza do choque, risco soberano e o caso brasileiro (6 parágrafos):** junta as antigas 2.2 e 2.3 e condensa evidência do Brasil e lacuna num só parágrafo (decisões de 21 out. 2026). Mudança do sinal com o regime macroeconômico e contexto para 2022; viés de volatilidade (Forbes e Rigobon); base da P3, da P4 e da parte "Brasil" da P2; evidência para o Brasil e lacuna. Rascunho v1 escrito.
+3. **2.3 Síntese (1 parágrafo e quadro):** proposições, referências, tipo de base (direta ou indireta) e resultado esperado nos EUA e no Brasil. Rascunho v1 escrito (Quadro 1).
 
 **Passo a passo:**
 
 1. Redigir cada subseção a partir das fichas, nunca a partir da memória.
 2. Terminar cada subseção mostrando de onde sai a proposição correspondente.
-3. Montar o quadro-síntese da subseção 2.5.
-4. Conferir a numeração: a introdução cita "seção 3.2.5" para as proposições. Ajustar para a numeração real.
+3. Montar o quadro-síntese da subseção 2.3.
+4. Conferir a numeração: a introdução remete à seção 2.3 para as proposições (ajustado em 21 out. 2026).
 5. Revisar o estilo: parágrafos de 3 a 5 linhas, sem travessões, sem conectivos repetidos e com citações em ABNT.
 
 **Etapa concluída quando:**
 
-- [ ] Cada proposição é derivada explicitamente no texto
-- [ ] O quadro-síntese está pronto
-- [ ] Toda citação consta em `referencias.md`
+- [x] Cada proposição é derivada explicitamente no texto (P1 e P2 na 2.1; 2022, P3, P4 e parte "Brasil" da P2 na 2.2)
+- [x] O quadro-síntese está pronto (Quadro 1, seção 2.3)
+- [x] Toda citação consta em `referencias.md`
 - [ ] Um integrante de fora da área financeira leu e entendeu o texto
 
 ---
@@ -327,10 +358,20 @@ Supõe o prazo de 4 a 6 semanas a partir de agora. Ajustar às datas reais do gr
 
 | Etapa | Responsável | Revisor |
 |---|---|---|
-| 1. Fichamento | | |
+| 1. Fichamento | fichas prontas em `fichamento/` (13 arquivos) | conferência contra o texto-fonte em 21 out. 2026; assinatura humana a preencher em cada ficha |
 | 2. Lacunas e referências | | |
 | 3. Dados | | |
 | 4. Análise | | |
 | 5. Revisão da literatura | | |
 | 6. Desenvolvimento | | |
 | 7. Conclusão | | |
+
+Sugestão de divisão das 13 fichas entre 5 integrantes, para a assinatura do campo "Revisado por" (quem é de finanças fica com os eixos 1 e 2; quem é de outras áreas, com os textos mais descritivos):
+
+| Integrante | Lê / assina (eixos 1 e 2, finanças) | Lê / assina (eixos 3 e 4 e método) |
+|---|---|---|
+| A | Baur (2009), Baele et al. (2020), Connolly et al. (2005) | |
+| B | Campbell et al. (2017), Molenaar et al. (2024), Forbes e Rigobon (2002) | |
+| C | | Dufour et al. (2017), Hofmann et al. (2020), Bianconi et al. (2013) |
+| D | | Cardoso e Garcia (2023), Silva et al. (2014), Martínez Arroyo e Marín Rodríguez (2021) |
+| E | revisão cruzada das fichas de D | Yin (2015); revisão cruzada das fichas de A |

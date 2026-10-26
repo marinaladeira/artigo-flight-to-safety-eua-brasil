@@ -1,0 +1,73 @@
+regime,série,n,média,desvio,mínimo,máximo
+Amostra toda,S&P 500,5525,0.036,1.191,-12.765,10.424
+Amostra toda,Treasury 10 anos,5525,0.011,0.49,-3.114,4.395
+Amostra toda,Ibovespa,5525,0.044,1.657,-15.993,15.473
+Amostra toda,IMA-B (NTN-B),5525,0.051,0.411,-7.818,5.26
+Amostra toda,USD/BRL (PTAX),5525,0.011,0.93,-9.584,8.917
+Amostra toda,VIX (nível),5526,18.919,8.303,9.14,82.69
+Amostra toda,TIPS 10 anos,5525,0.002,0.495,-3.895,5.644
+Amostra toda,ETF IEF,5525,0.013,0.432,-2.551,3.369
+Amostra toda,IMA-B 5+,5525,0.053,0.619,-10.235,8.526
+Amostra toda,IDkA IPCA 10A,4974,0.048,0.656,-9.801,7.461
+Amostra toda,IRF-M,5525,0.047,0.201,-3.546,1.893
+Amostra toda,USD/BRL (fechamento),5039,0.016,1.113,-11.07,9.669
+Normal,S&P 500,4685,0.078,0.86,-6.862,5.395
+Normal,Treasury 10 anos,4685,0.004,0.442,-1.956,2.455
+Normal,Ibovespa,4685,0.096,1.374,-9.211,6.389
+Normal,IMA-B (NTN-B),4685,0.056,0.36,-7.818,2.794
+Normal,USD/BRL (PTAX),4685,-0.021,0.784,-4.61,8.423
+Normal,VIX (nível),4686,16.821,4.522,9.14,29.99
+Normal,TIPS 10 anos,4685,0.001,0.432,-2.179,2.481
+Normal,ETF IEF,4685,0.007,0.393,-1.866,2.219
+Normal,IMA-B 5+,4685,0.062,0.539,-10.235,4.114
+Normal,IDkA IPCA 10A,4150,0.057,0.577,-9.801,3.746
+Normal,IRF-M,4685,0.048,0.177,-3.546,1.432
+Normal,USD/BRL (fechamento),4223,-0.021,0.971,-5.15,7.01
+Só crise global,S&P 500,111,-0.802,2.16,-6.161,9.089
+Só crise global,Treasury 10 anos,111,0.098,0.677,-1.543,2.061
+Só crise global,Ibovespa,111,-0.398,1.799,-4.767,5.393
+Só crise global,IMA-B (NTN-B),111,-0.008,0.394,-2.708,0.875
+Só crise global,USD/BRL (PTAX),111,0.313,1.236,-3.892,5.253
+Só crise global,VIX (nível),111,33.443,3.975,30.02,52.33
+Só crise global,TIPS 10 anos,111,-0.003,0.781,-2.226,2.875
+Só crise global,ETF IEF,111,0.078,0.623,-1.677,2.228
+Só crise global,IMA-B 5+,111,-0.067,0.653,-4.812,1.339
+Só crise global,IDkA IPCA 10A,111,-0.079,0.718,-5.289,1.753
+Só crise global,IRF-M,111,0.022,0.213,-1.001,0.749
+Só crise global,USD/BRL (fechamento),111,0.343,1.372,-3.3,5.354
+Só crise local (BR),S&P 500,418,0.003,1.167,-3.473,4.24
+Só crise local (BR),Treasury 10 anos,418,0.055,0.524,-1.829,1.673
+Só crise local (BR),Ibovespa,418,-0.229,1.744,-5.611,5.164
+Só crise local (BR),IMA-B (NTN-B),418,0.021,0.553,-2.616,4.18
+Só crise local (BR),USD/BRL (PTAX),418,0.101,1.1,-6.069,3.52
+Só crise local (BR),VIX (nível),418,20.425,4.898,11.84,29.96
+Só crise local (BR),TIPS 10 anos,418,0.03,0.518,-1.751,2.487
+Só crise local (BR),ETF IEF,418,0.047,0.465,-1.697,1.386
+Só crise local (BR),IMA-B 5+,418,0.001,0.808,-3.745,6.113
+Só crise local (BR),IDkA IPCA 10A,402,0.006,0.835,-3.878,6.224
+Só crise local (BR),IRF-M,418,0.033,0.235,-0.905,1.242
+Só crise local (BR),USD/BRL (fechamento),398,0.134,1.255,-5.974,3.373
+Ambas,S&P 500,311,-0.249,3.204,-12.765,10.424
+Ambas,Treasury 10 anos,311,0.032,0.886,-3.114,4.395
+Ambas,Ibovespa,311,-0.211,3.853,-15.993,15.473
+Ambas,IMA-B (NTN-B),311,0.039,0.76,-4.691,5.26
+Ambas,USD/BRL (PTAX),311,0.258,1.954,-9.584,8.917
+Ambas,VIX (nível),311,43.313,11.818,30.03,82.69
+Ambas,TIPS 10 anos,311,-0.017,0.984,-3.895,5.644
+Ambas,ETF IEF,311,0.031,0.743,-2.551,3.369
+Ambas,IMA-B 5+,311,0.023,1.179,-7.26,8.526
+Ambas,IDkA IPCA 10A,311,0.037,1.163,-6.49,7.461
+Ambas,IRF-M,311,0.061,0.396,-2.513,1.893
+Ambas,USD/BRL (fechamento),307,0.257,2.136,-11.07,9.669
+Crise EUA (P1),S&P 500,524,-0.321,2.731,-12.765,10.424
+Crise EUA (P1),Treasury 10 anos,524,0.051,0.808,-3.114,4.395
+Crise EUA (P1),Ibovespa,524,-0.202,3.164,-15.993,15.473
+Crise EUA (P1),IMA-B (NTN-B),524,0.029,0.628,-4.691,5.26
+Crise EUA (P1),USD/BRL (PTAX),524,0.223,1.676,-9.584,8.917
+Crise EUA (P1),VIX (nível),524,37.907,11.617,21.48,82.69
+Crise EUA (P1),TIPS 10 anos,524,-0.004,0.883,-3.895,5.644
+Crise EUA (P1),ETF IEF,524,0.044,0.696,-2.551,3.369
+Crise EUA (P1),IMA-B 5+,524,0.007,0.981,-7.26,8.526
+Crise EUA (P1),IDkA IPCA 10A,524,0.015,0.981,-6.49,7.461
+Crise EUA (P1),IRF-M,524,0.049,0.329,-2.513,1.893
+Crise EUA (P1),USD/BRL (fechamento),518,0.216,1.861,-11.07,9.669
