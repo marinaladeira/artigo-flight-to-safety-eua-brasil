@@ -28,6 +28,8 @@ FORBES, K. J.; RIGOBON, R. No contagion, only interdependence: measuring stock m
 
 HOFMANN, B.; SHIM, I.; SHIN, H. S. Bond risk premia and the exchange rate. **Journal of Money, Credit and Banking**, v. 52, n. S2, p. 497-520, dez. 2020. DOI: https://doi.org/10.1111/jmcb.12760.
 
+INSTITUTO DE PESQUISA ECONÔMICA APLICADA (IPEA). **Ipeadata**: EMBI+ Risco-Brasil, série JPM366_EMBI366, diária. Fonte primária: J.P. Morgan. Brasília: Ipea, 2026. Disponível em: https://www.ipeadata.gov.br/ExibeSerie.aspx?serid=40940. Acesso em: 2 nov. 2026.
+
 MARTÍNEZ ARROYO, J. L.; MARÍN RODRÍGUEZ, N. J. Relación dinámica entre los credit default swaps y la deuda pública: análisis en el contexto latinoamericano. **Cuadernos de Economía**, Bogotá, v. 40, n. 83, p. 583-608, jul./dic. 2021. DOI: https://doi.org/10.15446/cuad.econ.v40n83.81997.
 
 MOLENAAR, R.; SÉNÉCHAL, E.; SWINKELS, L.; WANG, Z. Empirical evidence on the stock–bond correlation. **Financial Analysts Journal**, v. 80, n. 3, p. 17-36, jul. 2024. DOI: https://doi.org/10.1080/0015198X.2024.2317333.

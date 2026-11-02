@@ -98,3 +98,19 @@ Crise = `crise_local_br` ou `crise_global` (840 dias). Normal = nenhuma das duas
 - `codigo/04_analise.ipynb`: todo o código desta etapa.
 - `resultados/testes_proposicoes.csv`, `robustez.csv`, `p2_regressoes_vix.csv`, `p3_regressoes.csv`, `correlacao_por_ano.csv`, `correlacoes_moveis.csv`, `correlacao_movel_media_por_regime.csv`.
 - `figuras/figura1_correlacao_movel.png` (figura central) e `figuras/figura2_correlacao_por_ano.png`.
+
+## P4 · Robustez extra com o EMBI+ (2026-11-02)
+
+A pedido do Mateus, a P4 foi mantida e testada também com uma medida direta de risco-país: EMBI+ Risco-Brasil (JP Morgan, Ipeadata `JPM366_EMBI366`, arquivo em `dados/brutos/complementares/`). A série pública termina em 30/07/2024, então a subamostra vai de 17/09/2003 a 30/07/2024 (5.000 dias, 4 sem EMBI+ no mesmo dia). As definições foram fixadas antes do cálculo: (d) EMBI+ acima do p90 da subamostra (430 pb); (e) log-variação do EMBI+ em 21 pregões acima do p90 (12,7%).
+
+| | Só local | Só global | Diferença | IC95% bootstrap | p bootstrap |
+|---|---|---|---|---|---|
+| P4 principal na subamostra | +0,182 (417) | +0,461 (97) | −0,280 | [−0,47; −0,14] | 0,001 |
+| (d) nível do EMBI+ | +0,228 (408) | +0,603 (316) | −0,375 | [−0,56; −0,01] | 0,042 |
+| (d) com controle PTAX | +0,200 | +0,517 | −0,317 | [−0,49; +0,03] | 0,089 |
+| (e) alta do EMBI+ em 21 pregões | +0,322 (367) | +0,201 (275) | +0,121 | [−0,07; +0,30] | 0,219 |
+| (e) com controle PTAX | +0,249 | +0,149 | +0,099 | [−0,12; +0,29] | 0,366 |
+
+- (d) concentra os dias de "só local" em 2003–2005 (spread alto, mas caindo) e 2015–2016; repete o sinal contrário.
+- (e) espalha os dias por quase toda a amostra e é a medida mais próxima de choque de risco-país; o sinal fica **no sentido previsto pela P4**, sem significância. Contra o normal, sem diferença (+0,32 x +0,35).
+- **Leitura (interpretação):** medidas de fases longas (drawdown, nível de spread) dão o sinal contrário; medidas de choque (lista fixa (b), alta do EMBI+ (e)) dão o sinal previsto, sem significância. Veredito mantido: P4 não sustentada. Detalhes em `resultados/p4_embi.csv`.

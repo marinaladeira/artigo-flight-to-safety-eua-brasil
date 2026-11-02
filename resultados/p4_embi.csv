@@ -1,0 +1,8 @@
+teste,x,y,controle,regime_a,regime_b,n_a,n_b,r_a,r_b,dif,ic95_r_a_boot,ic95_dif_boot,p_boot_dif,z_fisher,p_fisher,bloco,r_a_forbes_rigobon
+"P4 principal, subamostra até 2024-07",r_ibov,r_ntnb,,so_local,so_global,417,97,0.1815,0.4614,-0.2798,[0.093; 0.261],[-0.473; -0.141],0.0010,-2.7609,0.0058,21,0.1911
+P4 EMBI+ nível p90 (d),r_ibov,r_ntnb,,so_local_embi_nivel,so_global_embi_nivel,408,316,0.2280,0.6026,-0.3746,[0.095; 0.407],[-0.561; -0.014],0.0420,-6.1804,0.0000,21,0.3660
+"P4 EMBI+ nível p90 (d), controle PTAX",r_ibov,r_ntnb,r_usdbrl,so_local_embi_nivel,so_global_embi_nivel,408,316,0.2002,0.5173,-0.3171,[0.100; 0.294],[-0.491; 0.029],0.0890,-4.9125,0.0000,21,
+BR só local EMBI+ nível p90 (d) x normal,r_ibov,r_ntnb,,so_local_embi_nivel,normal_embi_nivel,408,4180,0.2280,0.3684,-0.1404,[0.095; 0.407],[-0.285; 0.051],0.1520,-2.9682,0.0030,21,0.1757
+P4 EMBI+ alta de 21 pregões p90 (e),r_ibov,r_ntnb,,so_local_embi_alta,so_global_embi_alta,367,275,0.3222,0.2014,0.1207,[0.226; 0.440],[-0.072; 0.304],0.2190,1.6197,0.1053,21,0.3824
+"P4 EMBI+ alta de 21 pregões p90 (e), controle PTAX",r_ibov,r_ntnb,r_usdbrl,so_local_embi_alta,so_global_embi_alta,367,275,0.2486,0.1494,0.0992,[0.140; 0.344],[-0.116; 0.290],0.3660,1.2906,0.1968,21,
+BR só local EMBI+ alta de 21 pregões p90 (e) x normal,r_ibov,r_ntnb,,so_local_embi_alta,normal_embi_alta,367,4221,0.3222,0.3548,-0.0326,[0.226; 0.440],[-0.131; 0.083],0.6000,-0.6745,0.5000,21,0.2313
