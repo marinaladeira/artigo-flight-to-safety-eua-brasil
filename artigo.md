@@ -1,4 +1,16 @@
 
+# RESUMO (rascunho v1)
+
+Este artigo investiga se a correlação entre ações e títulos públicos se torna negativa em crises, como prevê a hipótese de *flight to quality*, e se o padrão observado nos Estados Unidos se repete no Brasil. O desenho é um estudo de caso comparativo com replicação teórica, que confronta S&P 500 e Treasury de 10 anos com Ibovespa e NTN-B (IMA-B), usando dados diários de setembro de 2003 a setembro de 2026. As crises são definidas pelo VIX acima de 30 e por quedas de 20% nos índices de ações, e as diferenças de correlação são avaliadas por *bootstrap* em blocos e por regressões com erros de Newey-West. Nos EUA, a correlação passa de −0,24 no período normal para −0,36 nas crises e diminui à medida que o VIX aumenta. No Brasil, a correlação é positiva nas crises (+0,43), mesmo com controle pelo câmbio, mas também fora delas (+0,39), e não reage ao VIX. Ao contrário do esperado, as crises de origem local não intensificaram esse comovimento. Conclui-se que a NTN-B não cumpre o papel de porto seguro que o Treasury exerce nos EUA, papel que, como mostra o episódio de 2022, depende também do regime de inflação.
+
+**Palavras-chave:** *flight to quality*; correlação entre ações e títulos; risco soberano; NTN-B; estudo de caso comparativo.
+
+# ABSTRACT (draft v1)
+
+This paper examines whether the correlation between stock and government bond returns turns negative during crises, as the flight-to-quality hypothesis predicts, and whether the pattern observed in the United States also holds in Brazil. The design is a comparative case study based on theoretical replication, contrasting the S&P 500 and the 10-year Treasury with the Ibovespa and Brazilian inflation-linked bonds (NTN-B, IMA-B index), using daily data from September 2003 to September 2026. Crises are defined by the VIX above 30 and by 20% drawdowns in equity indices, and correlation differences are assessed with block bootstrap and Newey-West regressions. In the US, the correlation falls from −0.24 in normal periods to −0.36 in crises and declines as the VIX rises. In Brazil, the correlation is positive in crises (+0.43), even after controlling for the exchange rate, but it is also positive outside them (+0.39) and does not respond to the VIX. Contrary to expectations, crises of domestic origin did not strengthen this comovement. We conclude that the NTN-B does not play the safe-haven role that the Treasury plays in the US, a role that, as the 2022 episode shows, also depends on the inflation regime.
+
+**Keywords:** flight to quality; stock-bond correlation; sovereign risk; NTN-B; comparative case study.
+
 # 1 INTRODUÇÃO (rascunho v3: problema, pergunta de pesquisa e justificativa)
 
 ## 1.1 Contextualização e problema de pesquisa
@@ -280,6 +292,22 @@ Contra ela, a P4 não se confirmou: se o risco-país fosse o mecanismo, as crise
 
 O episódio de 2022 acrescenta um elemento à comparação. Ao ficar positiva com a inflação alta, a correlação americana mostrou que o papel de proteção do Treasury não é permanente e depende do regime macroeconômico (CAMPBELL; SUNDERAM; VICEIRA, 2017; MOLENAAR et al., 2024). Nos EUA, a proteção existe na maior parte do tempo e falha em períodos de inflação. No Brasil, a NTN-B não protege a carteira de ações em nenhum dos regimes analisados.
 
+# 5 CONCLUSÃO (rascunho v1)
+
+Este estudo perguntou se a correlação entre ações e títulos públicos se torna negativa nas crises, como prevê a hipótese de *flight to quality*, e se esse padrão observado nos Estados Unidos se repete no Brasil. A resposta é que não se repete. Com dados diários de 2003 a 2026, o Treasury de 10 anos protege a carteira de ações nas crises americanas, e essa proteção cresce com a incerteza do mercado. A NTN-B, ao contrário, anda junto com o Ibovespa nas crises e também fora delas.
+
+O veredito de cada proposição resume esse contraste. A P1 foi sustentada, com ressalva: a correlação entre S&P 500 e Treasury cai de −0,24 no período normal para −0,36 nas crises, mas parte dessa queda pode se dever ao aumento da volatilidade. A P2 foi sustentada: a correlação diminui com o VIX nos EUA e não reage a ele no Brasil. A P3 foi sustentada, com ressalva: a correlação entre Ibovespa e NTN-B é positiva nas crises, mesmo com o controle pelo câmbio, mas é igualmente positiva no período normal. A P4 não foi sustentada, pois as fases de crise só local tiveram correlação menor que as de crise só global.
+
+A análise exploratória de 2022 mostrou que a proteção do Treasury também tem limites. Com o choque de inflação e o aperto monetário, a correlação americana ficou positiva no ano pela primeira vez desde 2006, e o título dos EUA passou a se comportar como o brasileiro. O papel de porto seguro, portanto, depende tanto do emissor quanto do regime macroeconômico.
+
+O estudo traz três contribuições. A primeira é testar a hipótese de *flight to quality* com o título doméstico brasileiro, em frequência diária e condicionando a análise às crises, lacuna apontada na seção 1.3. A segunda é mostrar que a ausência de proteção da NTN-B é uma característica de toda a amostra, e não apenas das crises, o que amplia a evidência de Cardoso e Garcia (2023) para um período mais longo e para vários índices de títulos. A terceira é oferecer um desenho reprodutível, com dados públicos e código aberto, que pode ser aplicado a outros emergentes.
+
+Para quem mantém carteiras que combinam ações e renda fixa brasileira, o resultado tem uma implicação direta. A NTN-B diversifica pouco justamente quando a proteção é mais necessária. Nesse caso, a cobertura pode precisar vir de outros ativos, como o dólar ou títulos de países considerados seguros, possibilidade que este estudo não testou.
+
+Os resultados têm limitações. O estudo de caso não permite generalização estatística, apenas analítica, e outros emergentes podem se comportar de forma diferente. A correlação é sensível à volatilidade, e o ajuste de Forbes e Rigobon (2002), usado como robustez, depende de hipóteses pouco plausíveis em crise. A NTN-B é um título real, enquanto o Treasury de 10 anos é nominal, diferença atenuada, mas não eliminada, pelos testes com o TIPS e o IRF-M. A amostra começa em 2003, o que deixa de fora as crises de 1998 e 2002, e o regime de crise só global reúne poucos dias. Por fim, a definição de crise local pela queda do Ibovespa pode não captar o risco-país, que é o mecanismo proposto.
+
+Essas limitações indicam os próximos passos. Uma medida direta de risco soberano, como o CDS de 5 anos ou o EMBI+ Brasil, permitiria testar a P4 de forma mais fiel ao mecanismo. Modelos de correlação condicional, como o DCC-GARCH, tratariam o viés de volatilidade de forma mais robusta. A inclusão de outros emergentes como novos casos, na mesma lógica de replicação, mostraria se o padrão brasileiro é próprio do país ou comum a mercados com risco soberano relevante.
+
 ---
 Notas para o grupo (remover antes da entrega):
 - **P4, definição operacional:** crise local = drawdown do Ibovespa ≤ −20% sem VIX acima do limiar. Verificar se há dias suficientes nessa categoria antes de fechar a proposição. A P4 tem base fraca na literatura (só Dufour et al., de forma indireta; ver `fichamento/matriz.md`). Alternativa a discutir: reformular a P4 em termos de risco soberano elevado (CDS de 5 anos do Brasil acima de 2%, limiar de Dufour et al., p. 13). Miyajima, Mohanty e Chan (2015) pode reforçar a P4, mas ainda depende do PDF.
@@ -297,3 +325,4 @@ Notas para o grupo (remover antes da entrega):
 - **P4 (decisão do grupo):** o texto da 4.3 registra o veredito "não sustentada" com a definição atual. Se o grupo trocar a crise local por risco-país (EMBI+ Brasil no Ipeadata ou CDS de 5 anos > 2%), reescrever a P4 na 4.3 e na 4.6 e rodar de novo o `04_analise.ipynb`.
 - **P3 e Quadro 1:** o resultado mostra correlação positiva também fora de crise. Avaliar se a P3 (seção 1.2) e o resultado esperado no Quadro 1 devem dizer "a NTN-B não protege em nenhum regime".
 - **Fontes de dados nas referências:** as cinco fontes primárias entraram em `referencias.md`. Conferir o formato ABNT de documento eletrônico com a norma do periódico escolhido.
+- **Resumo, abstract e conclusão (rascunho v1, 2026-11-02):** escritos com os vereditos atuais. Se a P4 ou a P3 mudarem, ajustar a frase correspondente nos três. Conferir o limite de palavras do resumo e o número de palavras-chave exigidos pelo periódico escolhido (hoje com cerca de 200 palavras e 5 palavras-chave).
