@@ -77,7 +77,7 @@ Crise = `crise_local_br` ou `crise_global` (840 dias). Normal = nenhuma das duas
 | EUA: S&P 500 x Treasury | +0,197 | −0,279 | +0,476 | [+0,25; +0,66] |
 | Brasil: Ibovespa x NTN-B | +0,490 | +0,655 | −0,165 | [−0,37; +0,07] |
 
-- Nos EUA, 2022 é o primeiro ano desde 2006 com correlação anual positiva, e ela segue perto de zero ou positiva desde então (2023 +0,09, 2024 +0,06, 2026 até setembro +0,43). Isso confirma o sinal que as notas do `artigo.md` pediam para checar e bate com Mosk, Pangallo e Zema (2022).
+- Nos EUA, 2022 é o primeiro ano desde 2006 com correlação anual positiva, e depois oscilou perto de zero (2023 +0,09, 2024 +0,06, 2025 −0,15), chegando a +0,43 em 2026 até setembro. Isso confirma o sinal que as notas do `artigo.md` pediam para checar e bate com Mosk, Pangallo e Zema (2022).
 - No Brasil, 2022 não destoa: a correlação já era positiva e ficou no patamar dos anos vizinhos.
 - Ou seja, em 2022 o Treasury passou a se comportar como a NTN-B. Ver `figuras/figura2_correlacao_por_ano.png` e `resultados/correlacao_por_ano.csv`.
 
