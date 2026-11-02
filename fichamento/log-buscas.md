@@ -67,3 +67,46 @@ Referências novas encontradas na leitura, para buscar:
 - Busca direta nos sites da RBFin, RBE, EconomiA, Estudos Econômicos e nos anais da SBE, ANPEC e SBFin (o buscador geral não indexa bem esses acervos).
 - Google Scholar: "flight to quality" Brazil; "fuga para qualidade" títulos públicos; citações de Cardoso e Garcia (2023) e de Dufour et al. (2017).
 - Para P4: episódios de crise doméstica no Brasil (2002, 2015, 2017) e comportamento de títulos e ações.
+
+
+## Buscas de 2026-11-02 (Claude, continuação)
+
+Comentário essencial 1 do parecer de 2026-11-02. Dados de resumos e metadados; ficha só a partir do texto completo.
+
+| # | Data | Alvo | Base | Termos | Candidatos |
+|---|---|---|---|---|---|
+| 15 | 02/11/2026 | Eixo 4 | Buscador web (extended) | "fuga para qualidade" ações títulos públicos Brasil correlação | nenhum |
+| 16 | 02/11/2026 | Eixo 4 | Buscador web (extended) | Revista Brasileira de Finanças correlação ações títulos públicos NTN-B Ibovespa | nenhum |
+| 17 | 02/11/2026 | Eixo 4 | Buscador web (extended) | ANPEC comovimento ações renda fixa Brasil risco país correlação condicional | nenhum |
+| 18 | 02/11/2026 | P3/P4 | Buscador web (extended) | "safe haven" Brazilian government bonds stocks crisis emerging local currency | C14 |
+| 19 | 02/11/2026 | Eixo 4 | Buscador web (extended) | dissertação correlação retornos ações títulos públicos Brasil IMA-B Ibovespa crise | C13 |
+| 20 | 02/11/2026 | P2/P3 | Buscador web | Dimic Kiviaho Piljak Äijö; Panchenko Wu | C15, C16 |
+| 21 | 02/11/2026 | P4 | Buscador web (extended) | título de C13 entre aspas | C12 |
+| 22 | 02/11/2026 | Eixo 4 | `site:periodicos.fgv.br` e `site:scielo.br` | títulos públicos ações correlação crise Brasil | nenhum |
+| 23 | 02/11/2026 | P3/P4 | Buscador web | EconomiA ANPEC stock bond Brazil sovereign spread comovement | C17, C18 |
+
+#### Candidatos para fichar
+
+| Cód. | Referência (a confirmar no texto) | Revisado por pares | Alvo | Por que importa | Prioridade |
+|---|---|---|---|---|---|
+| C12 | PARK, K.; FANG, Z.; HA, Y. H. Stock and bond returns correlation in Korea: local versus global risk during crisis periods. **Journal of Asian Economics**, v. 65, 2019. DOI: 10.1016/j.asieco.2019.101136 | Sim | P4 | Base direta da P4: crise local leva ações e títulos a cair juntos; crise global gera *flight to quality*. O sinal da correlação depende da origem do risco | **Alta** |
+| C13 | AMORIM, D. P. L.; GAZOLLA, F. S.; ROCHA, F. D.; RAAD, L. V. V. Do Treasury bond returns affect the stock market differently in crisis and non-crisis conditions in Brazil? Evidence from a Markov switching model. Working paper, 2026 | Não (working paper) | Lacuna (1.3), P3 | Único estudo brasileiro achado que separa crise e não crise com títulos públicos e Ibovespa (jan. 2002 a dez. 2024, mensal, IMA-S). Efeito cerca de 6 vezes maior em crise. Só foi achado por notícia (Dica de Hoje, 28/06/2026); **falta localizar o PDF** | **Alta** |
+| C14 | CHEEMA, M. A.; RYAN, M.; SARWAR, S. M. Which assets are safe havens? Evidence from 13 stock market downturns. **International Review of Economics & Finance**, v. 102, art. 104364, 2025. DOI: 10.1016/j.iref.2025.104364 | Sim | P4, seção 2 | Ativos de países ligados à origem da queda têm menos chance de ser porto seguro; título público funciona em quedas macro e financeiras, não em conflitos geopolíticos | Alta |
+| C15 | DIMIC, N.; KIVIAHO, J.; PILJAK, V.; ÄIJÖ, J. Impact of financial market uncertainty and macroeconomic factors on stock–bond correlation in emerging markets. **Research in International Business and Finance**, v. 36, p. 41-51, 2016. DOI: 10.1016/j.ribaf.2015.09.001 | Sim | P2 (Brasil) | Dez emergentes: a incerteza global das ações explica a correlação ações x títulos. Pode contrariar o nosso resultado nulo do VIX no Brasil. **Conferir se o Brasil está na amostra** | Média |
+| C16 | PANCHENKO, V.; WU, E. Time-varying market integration and stock and bond return concordance in emerging markets. **Journal of Banking & Finance**, v. 33, n. 6, p. 1014-1021, 2009 | Sim | Seção 2, P3 | 18 emergentes: mais integração da bolsa leva a descolamento entre ações e títulos. Conferir se o Brasil está na amostra | Média |
+| C17 | FERREIRA, R. T.; ZACHIS, S. M. Análise dos saltos e co-saltos nas séries do IBOVESPA, Dow Jones, taxa de juros, taxa de câmbio e no spread do C-Bond. **Economia** (ANPEC), v. 13, n. 1, p. 15-34, 2012 | Sim | P3 (mecanismo) | Saltos conjuntos do Ibovespa com o spread soberano são mais frequentes que com o Dow Jones: a bolsa brasileira se move junto com o risco soberano | Média |
+| C18 | ROBITAILLE, P.; ROUSH, J. How do FOMC actions and U.S. macroeconomic data announcements move Brazilian sovereign yield spreads and stock prices? **International Finance Discussion Papers**, n. 868. Washington: Federal Reserve, 2006 | Não (texto para discussão) | P4 (canal global) | Choques americanos abrem o spread soberano e derrubam o Ibovespa ao mesmo tempo | Baixa |
+| C19 | CALLADO, A. A. C.; MOLLER, H. D. Brazilian sovereign risk, international crises and foreign portfolio investment flows. **Revista de Gestão USP**, v. 16, n. 2, p. 51-71, 2009 | Sim | P4 | Risco soberano sobe em cada crise de 1995 a 2005; spread e Ibovespa se movem juntos | Baixa |
+| C20 | BUNDA, I.; HAMANN, A. J.; LALL, S. Correlations in emerging market bonds: the role of local and global factors. **Emerging Markets Review**, v. 10, n. 2, p. 67-96, 2009 | Sim | P4 | Separa fatores locais e globais nos títulos de emergentes em alta volatilidade. Conferir se o Brasil está na amostra | Baixa |
+| C21 | FERREIRA, M. S.; FIGUEIREDO, J. M. The influence of global uncertainty and financial shocks, and sovereign risk shock on the Brazilian term structure of interest rate. **Texto para Discussão Cedeplar-UFMG**, n. 674, 2024 | Não (texto para discussão) | P4 (mecanismo) | Choque de risco soberano sobe as taxas nominais e reais (o preço da NTN-B cai); choque de incerteza global reduz as taxas curtas | Baixa |
+
+#### Vistos e descartados
+
+| Trabalho | Motivo |
+|---|---|
+| Ain e Siddiqui (2019), Research in Applied Economics | 17 emergentes, sem o Brasil |
+| Siahaan e Robiyanto (2021), JMK | Só ASEAN-5 |
+| Liu, Wang e Li (2019), RIBAF | Só EUA (útil apenas se o grupo quiser mais uma fonte de correlação maior em crise nos EUA) |
+| Dias, Pereira e Leitão Neto (2022), Cadernos de Finanças Públicas | Trata de intervenções do Tesouro, sem Ibovespa |
+| Souza, Filomena e Caldeira, ANPEC 2015 | Paridade de risco com índices setoriais, sem títulos |
+| Jardini (2024), TCC Insper | Deságio de LFT e debêntures |
