@@ -44,6 +44,6 @@ POLITIS, D. N.; ROMANO, J. P. A circular block-resampling procedure for stationa
 
 SILVA, R. da; BERTELLA, M. A.; PEREIRA, R. de A. M. Mercado de ações brasileiro: uma investigação empírica sobre suas relações de longo prazo e de precedência temporal pré-crise de 2008. **Nova Economia**, Belo Horizonte, v. 24, n. 2, p. 317-336, maio/ago. 2014. DOI: https://doi.org/10.1590/0103-6351/1411.
 
-YAHOO FINANCE. **Historical data**: ^GSPC (S&P 500, S&P Dow Jones Indices), ^BVSP (Ibovespa, B3), IEF (iShares 7-10 Year Treasury Bond ETF) e BRL=X. [S. l.]: Yahoo, 2026. Disponível em: https://finance.yahoo.com. Acesso em: 21 out. 2026.
+YAHOO FINANCE. **Historical data**: ^GSPC (S&P 500, S&P Dow Jones Indices), ^BVSP (Ibovespa, B3) e IEF (iShares 7-10 Year Treasury Bond ETF). [S. l.]: Yahoo, 2026. Disponível em: https://finance.yahoo.com. Acesso em: 21 out. 2026.
 
 YIN, R. K. **Estudo de caso**: planejamento e métodos. Tradução de Cristhian Matheus Herrera. 5. ed. Porto Alegre: Bookman, 2015.

@@ -51,9 +51,10 @@ Crise = `crise_local_br` ou `crise_global` (840 dias). Normal = nenhuma das duas
 |---|---|---|---|---|
 | Ibovespa x NTN-B | +0,430 | +0,387 | +0,043 | [−0,18; +0,21] |
 | Parcial, controle PTAX | +0,364 | +0,298 | +0,067 | [−0,14; +0,25] |
-| Parcial, controle BRL=X | +0,419 | +0,393 | +0,026 | [−0,20; +0,22] |
+| Parcial, controle PTAX t e t+1 | +0,354 | +0,276 | +0,078 | [−0,15; +0,27] |
 
 - Em crise, a NTN-B anda junto com o Ibovespa (correlação positiva), e isso se mantém com o câmbio como controle. Na regressão r_ntnb = a + b·r_ibov + c·r_câmbio em crise, b = +0,089 (p < 0,001).
+- **Revisão de 2026-11-16:** o controle pelo BRL=X do Yahoo foi retirado, porque a série aparece com data deslocada de forma irregular em relação à PTAX a partir de 2010 (correlação do retorno do BRL=X com a PTAX do dia anterior chega a 0,79 em 2011). No lugar entrou a PTAX do dia e do dia seguinte, que capta o câmbio da tarde. O resultado anterior com o BRL=X era +0,419 x +0,393. Nenhum outro número mudou ao rodar o notebook de novo.
 - **Ressalva:** a correlação é positiva também fora de crise, e a diferença crise x normal não é significativa. A NTN-B se comporta como ativo de risco **sempre**, não só em crise. Isso é ainda mais forte que a P3, mas muda a frase: o achado é "a NTN-B nunca funciona como porto seguro", e não "deixa de funcionar em crise".
 - Robustez: IMA-B 5+ (+0,37), IDkA IPCA 10A (+0,37), IRF-M (+0,34, título prefixado), retornos em dólar (+0,78) e VIX p90 (+0,36) dão o mesmo resultado. O sinal positivo não depende do índice nem de o título ser indexado à inflação.
 - Contraste com os EUA (replicação teórica): em crise, −0,36 nos EUA contra +0,43 no Brasil.
