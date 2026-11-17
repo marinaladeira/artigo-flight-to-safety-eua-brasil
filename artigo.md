@@ -205,7 +205,7 @@ A distância entre os dois casos se repete nas médias por regime. No período n
 | Só crise global | 111 | +0,43 | [+0,31; +0,59] |
 | Crise local e global | 311 | +0,56 | [+0,27; +0,71] |
 
-Fonte: elaborado pelos autores. Intervalos obtidos por *bootstrap* em blocos circular de 21 pregões, com 2.000 réplicas.
+Fonte: elaborado pelos autores. Intervalos obtidos por *bootstrap* em blocos circular de 21 pregões, com 2.000 réplicas. A contagem de dias considera só os dias com retorno calculado, por isso o período normal tem um dia a menos que na Tabela 1.
 
 ## 4.2 Caso de referência: EUA
 
