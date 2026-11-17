@@ -1,0 +1,2 @@
+arquivo,fonte,serie,descricao,url,primeira_data,ultima_data,observacoes,sha256,data_download
+ipeadata_JPM366_EMBI366.json,Ipeadata (JP Morgan),JPM366_EMBI366,"EMBI+ Risco-Brasil, diário, pontos-base (robustez da P4)",https://www.ipeadata.gov.br/api/odata4/ValoresSerie(SERCODIGO='JPM366_EMBI366'),1994-04-29,2024-07-30,7756,ea265b4dc5bcd7b352e0502ce865170ed7f50c9c003e2a1e2e2f86284d8b6d9d,2026-11-02

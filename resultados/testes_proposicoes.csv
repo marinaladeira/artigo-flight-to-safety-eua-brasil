@@ -1,0 +1,12 @@
+teste,x,y,controle,regime_a,regime_b,n_a,n_b,r_a,r_b,dif,ic95_r_a_boot,ic95_dif_boot,p_boot_dif,z_fisher,p_fisher,bloco,r_a_forbes_rigobon
+P1 principal,r_sp500,r_treasury,,crise_p1_eua,normal_eua,524,5001,-0.3605,-0.2408,-0.1197,[-0.459; -0.253],[-0.225; -0.002],0.0480,-2.8640,0.0042,21,-0.1236
+P3 sem controle,r_ibov,r_ntnb,,crise_br,normal,840,4685,0.4304,0.3874,0.0431,[0.212; 0.595],[-0.176; 0.214],0.7800,1.3783,0.1681,21,0.2339
+P3 controle PTAX,r_ibov,r_ntnb,r_usdbrl,crise_br,normal,840,4685,0.3643,0.2977,0.0666,[0.157; 0.541],[-0.144; 0.248],0.6870,1.9948,0.0461,21,
+P3 controle PTAX t e t+1,r_ibov,r_ntnb,r_usdbrl + r_usdbrl_seguinte,crise_br,normal,840,4684,0.3541,0.2762,0.0779,[0.123; 0.542],[-0.152; 0.271],0.6680,2.3072,0.0210,21,
+P4 principal,r_ibov,r_ntnb,,so_local,so_global,418,111,0.1807,0.4308,-0.2501,[0.092; 0.273],[-0.429; -0.108],0.0010,-2.5755,0.0100,21,0.1856
+P4 controle PTAX,r_ibov,r_ntnb,r_usdbrl,so_local,so_global,418,111,0.1629,0.3230,-0.1601,[0.057; 0.259],[-0.403; 0.000],0.0510,-1.5795,0.1142,21,
+BR so_local x normal,r_ibov,r_ntnb,,so_local,normal,418,4685,0.1807,0.3874,-0.2066,[0.092; 0.273],[-0.307; -0.107],0.0000,-4.4118,0.0000,21,0.1434
+BR so_global x normal,r_ibov,r_ntnb,,so_global,normal,111,4685,0.4308,0.3874,0.0435,[0.306; 0.587],[-0.092; 0.211],0.4360,0.5368,0.5914,21,0.3439
+BR ambas x normal,r_ibov,r_ntnb,,ambas,normal,311,4685,0.5555,0.3874,0.1682,[0.267; 0.710],[-0.123; 0.332],0.2650,3.7003,0.0002,21,0.2321
+EUA 2022 x 2018-2023 sem 2022,r_sp500,r_treasury,,a2022,fora,240,1198,0.1967,-0.2793,0.4760,[0.001; 0.356],[0.245; 0.663],0.0000,6.8374,0.0000,21,
+BR 2022 x 2018-2023 sem 2022,r_ibov,r_ntnb,,a2022,fora,240,1198,0.4904,0.6553,-0.1649,[0.328; 0.634],[-0.366; 0.067],0.1730,-3.4860,0.0005,21,

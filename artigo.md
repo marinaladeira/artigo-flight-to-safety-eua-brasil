@@ -1,3 +1,16 @@
+# O TÍTULO PÚBLICO COMO PORTO SEGURO EM CRISES: UM ESTUDO DE CASO COMPARATIVO ENTRE ESTADOS UNIDOS E BRASIL (2003-2026)
+
+# RESUMO (rascunho v2)
+
+Este artigo investiga se a correlação entre ações e títulos públicos se torna negativa em crises, como prevê a hipótese de *flight to quality*, e se o padrão dos Estados Unidos se repete no Brasil. Em um estudo de caso comparativo com replicação teórica, confrontam-se S&P 500 e Treasury de 10 anos com Ibovespa e NTN-B, em dados diários de 2003 a 2026, com crises definidas pelo VIX e por quedas de 20% nas bolsas. Nos EUA, a correlação passa de −0,24 no período normal para −0,36 nas crises e diminui quando o VIX sobe. No Brasil, ela é positiva nas crises (+0,43), mesmo com controle pelo câmbio, mas também fora delas (+0,39), e não reage ao VIX. As crises de origem local não intensificaram esse comovimento, ao contrário do esperado. Conclui-se que a NTN-B não cumpre o papel de porto seguro do Treasury, papel que, como mostra 2022, depende também do regime de inflação.
+
+**Palavras-chave:** *flight to quality*; correlação entre ações e títulos; risco soberano; NTN-B; mercados emergentes.
+
+# ABSTRACT (draft v2)
+
+This paper examines whether the correlation between stock and government bond returns turns negative during crises, as the flight-to-quality hypothesis predicts, and whether the US pattern also holds in Brazil. In a comparative case study based on theoretical replication, we contrast the S&P 500 and the 10-year Treasury with the Ibovespa and Brazilian inflation-linked bonds (NTN-B), using daily data from 2003 to 2026 and defining crises by the VIX and by 20% equity drawdowns. In the US, the correlation falls from −0.24 in normal periods to −0.36 in crises and declines as the VIX rises. In Brazil, it is positive in crises (+0.43), even after controlling for the exchange rate, but also outside them (+0.39), and does not respond to the VIX. Contrary to expectations, crises of domestic origin did not strengthen this comovement. We conclude that the NTN-B does not play the safe-haven role of the Treasury, a role that, as 2022 shows, also depends on the inflation regime.
+
+**Keywords:** flight to quality; stock-bond correlation; sovereign risk; NTN-B; emerging markets.
 
 # 1 INTRODUÇÃO (rascunho v3: problema, pergunta de pesquisa e justificativa)
 
@@ -5,7 +18,7 @@
 
 Em momentos de crise, investidores costumam vender ativos de risco e buscar proteção em ativos considerados seguros. Esse movimento, conhecido na literatura como *flight to quality* ou *flight to safety*, tem no título público de referência, como o Treasury norte-americano, o ativo seguro e líquido típico (BAELE et al., 2020). Como consequência, espera-se que a correlação entre os retornos de ações e desses títulos se torne negativa justamente quando a proteção é mais necessária. Nos dias de *flight to safety* em países desenvolvidos, essa correlação chega a −58,5% em média (BAELE et al., 2020), mas o padrão não aparece em todas as crises: nos Estados Unidos, Baur e Lucey (2009) o encontram em duas de seis crises entre 1997 e 2002.
 
-Essa relação também não é fixa ao longo do tempo. A covariância entre ações e Treasuries foi positiva no início dos anos 1980, de inflação alta, e negativa nos anos 2000, sobretudo nas recessões de 2001 e de 2007 a 2009 (CAMPBELL; SUNDERAM; VICEIRA, 2017). Até 2022, a correlação voltou a subir nos Estados Unidos e na zona do euro, em um ambiente de inflação elevada e de aperto monetário (MOSK; PANGALLO; ZEMA, 2022). Esses episódios reforçam a visão de que o sinal da correlação depende do ambiente: a maior aversão a risco tende a reduzir a correlação, enquanto a inflação alta tende a torná-la positiva (MOLENAAR et al., 2024; MOSK; PANGALLO; ZEMA, 2022).
+Essa relação também não é fixa ao longo do tempo. A covariância entre ações e Treasuries foi positiva no início dos anos 1980, de inflação alta, e negativa nos anos 2000, sobretudo nas recessões de 2001 e de 2007 a 2009 (CAMPBELL; SUNDERAM; VICEIRA, 2017). Em 2022, a correlação voltou a subir nos Estados Unidos e na zona do euro, em um ambiente de inflação elevada e de aperto monetário (MOSK; PANGALLO; ZEMA, 2022). Esses episódios reforçam a visão de que o sinal da correlação depende do ambiente: a maior aversão a risco tende a reduzir a correlação, enquanto a inflação alta tende a torná-la positiva (MOLENAAR et al., 2024; MOSK; PANGALLO; ZEMA, 2022).
 
 No caso de economias emergentes, há um elemento adicional. O título público carrega risco soberano e, quando esse risco é alto, deixa de funcionar como proteção. Na zona do euro, os títulos dos países de maior risco passaram a se mover junto com as ações durante a crise da dívida soberana (DUFOUR; STANCU; VAROTTO, 2017). Nos emergentes, a depreciação cambial vem acompanhada de saída de investidores estrangeiros e de alta do prêmio de risco de crédito dos títulos em moeda local (HOFMANN; SHIM; SHIN, 2020). No Brasil, portanto, não é evidente que a NTN-B cumpra o mesmo papel de proteção que o Treasury exerce nos Estados Unidos.
 
@@ -31,7 +44,7 @@ As proposições correspondentes são:
 - **P3:** no Brasil, o título público doméstico se comporta como ativo de risco em crises, mesmo controlando pela taxa de câmbio (DUFOUR; STANCU; VAROTTO, 2017; HOFMANN; SHIM; SHIN, 2020; MOLENAAR et al., 2024).
 - **P4:** o comportamento de ativo de risco da NTN-B é mais intenso quando a crise decorre de fatores domésticos, que elevam diretamente o risco-país. A proposição é inspirada em Dufour, Stancu e Varotto (2017): na zona do euro, o título dos países de maior risco seguiu protegendo a carteira na crise de 2008, de origem externa, e só passou a se mover com as ações na crise da dívida soberana, que elevou o risco de crédito desses países.
 
-O episódio de 2021 e 2022, marcado por choque de inflação e aperto monetário, será tratado como análise exploratória e descritiva, sem proposição formal associada.
+O episódio de 2022, marcado por choque de inflação e aperto monetário, será tratado como análise exploratória e descritiva, sem proposição formal associada.
 
 ## 1.3 Justificativa
 
@@ -85,15 +98,242 @@ O Quadro 1 reúne as proposições, as referências que as sustentam e o resulta
 
 Fonte: elaborado pelos autores.
 
+# 3 METODOLOGIA (rascunho v1)
+
+## 3.1 Desenho da pesquisa
+
+O estudo adota o desenho de estudo de caso comparativo com dois casos, na lógica de replicação teórica (YIN, 2015). Os Estados Unidos formam o caso de referência e o Brasil, o caso contrastante. Na replicação teórica, os casos são escolhidos porque a teoria prevê resultados opostos por razões conhecidas de antemão. Aqui, a razão prevista é o risco soberano, que retiraria da NTN-B o papel de proteção que o Treasury exerce.
+
+A unidade de análise é a relação entre o retorno diário do principal índice de ações e o do título público de referência de cada país. As proposições P1 a P4 (seção 2.3) orientam a coleta e a análise, e cada uma recebe, ao final, o veredito de sustentada, sustentada com ressalva ou não sustentada. Os testes estatísticos apoiam esse veredito, mas não o substituem, como é próprio do estudo de caso.
+
+## 3.2 Dados e amostra
+
+A amostra vai de 16 de setembro de 2003, primeiro dia do IMA-B, a 30 de setembro de 2026, data de corte fixada para que a base não mude a cada nova coleta. O período cobre a crise financeira de 2008, a crise da dívida europeia de 2011, a perda do grau de investimento do Brasil em 2015, o Joesley Day em 2017, a pandemia de 2020 e o choque de inflação de 2022. A crise eleitoral brasileira de 2002 fica de fora, porque a série do IMA-B começa depois dela.
+
+Todas as séries são públicas e foram baixadas em 21 de outubro de 2026, exceto o EMBI+, obtido em 2 de novembro de 2026, com o arquivo original guardado sem alteração e identificado por um código de verificação (*hash*). O Quadro 2 lista as séries, as fontes e o papel de cada uma.
+
+**Quadro 2 – Séries, fontes e uso na análise**
+
+| Série | Fonte | Uso |
+|---|---|---|
+| S&P 500 (índice de preço) | S&P Dow Jones Indices, via Yahoo Finance (^GSPC) | Ativo de risco dos EUA (P1, P2) |
+| Treasury de 10 anos, taxa nominal | Federal Reserve, publicação H.15 (RIFLGFCY10_N.B) | Título dos EUA (P1, P2) |
+| VIX | Cboe | Crise global (P1, P4) e incerteza contínua (P2) |
+| Ibovespa | B3, via Yahoo Finance (^BVSP) | Ativo de risco do Brasil (P2 a P4) |
+| IMA-B | ANBIMA | Título do Brasil, carteira de NTN-B (P2 a P4) |
+| Câmbio USD/BRL, PTAX de venda | Banco Central do Brasil, SGS, série 1 | Controle na P3 |
+| IMA-B 5+, IDkA IPCA 10 anos e IRF-M | ANBIMA | Títulos alternativos do Brasil (robustez) |
+| TIPS de 10 anos, taxa real | Federal Reserve, H.15 (RIFLGFCY10_XII_N.B) | Título real dos EUA (robustez) |
+| ETF IEF | iShares, via Yahoo Finance | Conferência do retorno do Treasury (robustez) |
+| EMBI+ Risco-Brasil (até jul. 2024) | J.P. Morgan, via Ipeadata (JPM366_EMBI366) | Medida direta de risco-país na P4 (robustez) |
+
+Fonte: elaborado pelos autores.
+
+O IMA-B é a série principal do título brasileiro por três motivos: é a mais longa disponível, já vem como índice de retorno total e é a referência mais usada no mercado. O IMA-B 5+, com prazo médio mais próximo do Treasury de 10 anos, entra como teste de robustez. O Treasury nominal de 10 anos é o título usado na literatura de *flight to quality* (BAUR; LUCEY, 2009; BAELE et al., 2020). Como a NTN-B é indexada à inflação e o Treasury é nominal, o TIPS de 10 anos permite comparar títulos reais nos dois países.
+
+## 3.3 Tratamento dos dados
+
+As séries foram alinhadas pelos dias úteis comuns aos dois países, o que resulta em 5.526 dias. Dias em que só um dos mercados abriu foram excluídos, em vez de preenchidos com o valor do dia anterior, porque a repetição criaria retornos nulos que não ocorreram e puxaria a correlação para baixo. Os retornos foram calculados depois do alinhamento, a partir dos níveis. Assim, quando um dia é excluído, o retorno seguinte acumula os dois dias para todas as séries ao mesmo tempo, o que ocorre em 418 observações.
+
+Os retornos são logarítmicos e expressos em porcentagem, r = 100 · ln(P_t / P_t−1). Como o H.15 publica a taxa do Treasury, e não o preço, o retorno diário foi obtido reprecificando, a cada dia, um título de 10 anos negociado ao par, com cupom semestral igual à taxa do dia anterior. O cálculo inclui o cupom corrido e a convexidade. O retorno assim construído tem correlação de 0,967 com o do ETF IEF, que é um preço de mercado. Os valores extremos não foram excluídos, pois coincidem com as crises que são objeto do estudo.
+
+## 3.4 Definição das crises
+
+Três critérios identificam as crises. A crise global ocorre quando o VIX fecha acima de 30, limiar que também é a referência de Connolly, Stivers e Sun (2005). A crise local brasileira ocorre quando o Ibovespa está 20% ou mais abaixo do seu máximo dos 252 pregões anteriores. O mesmo critério de queda, aplicado ao S&P 500, identifica a crise de mercado nos EUA, o que mantém a simetria entre os casos. As quedas são calculadas no calendário de cada bolsa, antes do alinhamento, para que a janela corresponda a um ano de pregões.
+
+Para a P1, o dia é de crise nos EUA quando o VIX supera 30 ou o S&P 500 está em queda de 20%. Para o Brasil, os dois critérios se combinam em quatro regimes: só crise local, só crise global, as duas ao mesmo tempo e período normal. A P3 compara qualquer crise com o período normal, e a P4 compara só crise local com só crise global. A Tabela 1 mostra quantos dias cada regime reúne.
+
+**Tabela 1 – Dias e episódios por regime de mercado (set. 2003 a set. 2026)**
+
+| Regime | Critério | Dias | % da amostra | Episódios |
+|---|---|---|---|---|
+| Crise nos EUA (P1) | VIX > 30 ou S&P 500 ≥ 20% abaixo do pico | 524 | 9,5 | 57 |
+| Período normal no Brasil | Nenhuma crise local nem global | 4.686 | 84,8 | 81 |
+| Só crise local | Ibovespa ≥ 20% abaixo do pico, VIX ≤ 30 | 418 | 7,6 | 66 |
+| Só crise global | VIX > 30, Ibovespa acima do limiar de queda | 111 | 2,0 | 39 |
+| Crise local e global | Os dois critérios ao mesmo tempo | 311 | 5,6 | 29 |
+
+Fonte: elaborado pelos autores com dados de Cboe, Yahoo Finance e ANBIMA. Contagem sobre os 5.526 dias da base; episódio é uma sequência ininterrupta de dias no regime.
+
+A Tabela 1 traz uma informação relevante para a P4. O risco previsto no planejamento, o de haver poucos dias de crise só local, não se confirmou. O regime escasso é o de crise só global: são 111 dias, divididos em 39 episódios, o mais longo com 10 pregões, porque as crises globais quase sempre derrubam também o Ibovespa.
+
+## 3.5 Procedimentos de análise
+
+A medida central é o coeficiente de correlação de Pearson entre os retornos diários de ações e títulos. Ele é usado de duas formas. Na primeira, calcula-se a correlação em janelas móveis de 63 pregões, cerca de três meses, para acompanhar a relação ao longo do tempo. Na segunda, calcula-se a correlação usando apenas os dias de cada regime, o que permite comparar crise e período normal.
+
+A diferença entre as correlações de dois regimes é avaliada por dois testes. O teste z de Fisher é o mais simples, mas supõe que os dias sejam independentes, o que não vale para retornos financeiros. Por isso, o teste principal é um *bootstrap* em blocos circular (POLITIS; ROMANO, 1992): a amostra é reconstruída 2.000 vezes juntando blocos de 21 pregões consecutivos, e a correlação de cada regime é recalculada em cada réplica. O intervalo de 95% da diferença vem dos percentis 2,5 e 97,5 das réplicas, e a diferença é significativa, ao nível de 5% e em teste bicaudal, quando esse intervalo não inclui o zero.
+
+Cada proposição tem um teste próprio. A P1 compara a correlação entre S&P 500 e Treasury em crise com a do período normal. A P2 estima a regressão da correlação móvel sobre o nível do VIX, para cada país, com erros-padrão de Newey e West (1987) e 63 defasagens, número próximo ao de dias que duas janelas vizinhas compartilham.
+
+A P3 compara a correlação entre Ibovespa e NTN-B em crise e em período normal, com e sem o câmbio como controle. O controle é feito pela correlação parcial: o efeito linear do câmbio é retirado dos dois retornos antes de calcular a correlação. A P4 compara a correlação nos regimes de só crise local e só crise global, e o ano de 2022 é comparado com os anos de 2018 a 2023.
+
+Como a correlação sobe quando a volatilidade aumenta (FORBES; RIGOBON, 2002), a correlação de crise também é apresentada com o ajuste proposto pelos autores, ρ* = ρ / √(1 + δ[1 − ρ²]), em que δ é o aumento relativo da variância do índice de ações na crise. O ajuste é tratado como teste de robustez, pois supõe a ausência de choques globais comuns, condição pouco plausível nas crises analisadas.
+
+Os testes de robustez variam uma escolha de cada vez: o limiar de crise global (percentil 90 do VIX), o título (TIPS e IEF nos EUA; IMA-B 5+, IDkA IPCA 10 anos e IRF-M no Brasil), o controle cambial (PTAX do dia e do dia seguinte), a moeda (retornos brasileiros em dólar), o tamanho do bloco do *bootstrap* (63 pregões) e a definição de crise local. Para esta última, foram usados três critérios alternativos: excluir os 63 pregões seguintes a uma crise global, considerar os 21 pregões após quatro choques locais conhecidos e considerar os dias em que o retorno acumulado do Ibovespa em 21 pregões está entre os 5% piores da amostra. Dois critérios medem o risco-país diretamente, pelo EMBI+: o nível acima do percentil 90 da amostra e a alta em 21 pregões acima do percentil 90.
+
+O controle cambial alternativo registrado no planejamento era o câmbio de fechamento do Yahoo Finance (BRL=X). Na revisão, verificou-se que, a partir de 2010, essa série aparece com a data deslocada de forma irregular em relação à PTAX, e ela foi descartada. Em seu lugar, o controle usa a PTAX do dia e a do dia seguinte. Como a PTAX é a média de cotações da manhã e do início da tarde, a do dia seguinte capta o movimento do câmbio no fim do pregão, que o câmbio de fechamento mediria. A troca foi feita depois da primeira rodada, e o resultado anterior está registrado no repositório.
+
+As proposições, as fontes, os limiares de crise e os testes de robustez foram definidos e registrados no repositório do estudo entre 6 e 22 de outubro de 2026, antes do cálculo de qualquer correlação. Todos os testes realizados são relatados, inclusive os que não sustentam as proposições, e nenhuma proposição foi reformulada depois de conhecidos os resultados. Há duas exceções ao calendário: a troca do controle cambial alternativo, descrita acima, e o teste com o EMBI+, incluído depois da primeira rodada para medir o risco-país de forma direta. Suas duas definições foram fixadas antes de qualquer correlação calculada com elas, e a P4 manteve a redação original.
+
+Todo o processamento e a análise foram feitos em Python, com as bibliotecas pandas, NumPy, SciPy e statsmodels. O código e os dados brutos estão no repositório do estudo, e a base processada foi reproduzida do zero em outra máquina, com resultado idêntico.
+
+# 4 RESULTADOS E DISCUSSÃO (rascunho v1)
+
+## 4.1 Visão geral
+
+A Figura 1 resume o principal achado do estudo. Ao longo de quase toda a amostra, a correlação entre S&P 500 e Treasury fica abaixo de zero, enquanto a correlação entre Ibovespa e NTN-B fica acima. Nos EUA, o título público tende a subir quando as ações caem. No Brasil, os dois tendem a cair juntos.
+
+**Figura 1 – Correlação móvel de 63 pregões entre ações e título público, EUA e Brasil (2003 a 2026)**
+
+![Figura 1](figuras/figura1_correlacao_movel.png)
+
+Fonte: elaborado pelos autores com dados de Yahoo Finance, Federal Reserve (H.15), Cboe e ANBIMA. Áreas em cinza: dias com VIX acima de 30. Valores abaixo de zero indicam que ações e título andam em sentidos opostos.
+
+A distância entre os dois casos se repete nas médias por regime. No período normal, a correlação dos retornos diários é de −0,24 nos EUA e de +0,39 no Brasil. Nas crises, as duas se afastam ainda mais: −0,36 nos EUA e +0,43 no Brasil. As seções a seguir examinam cada proposição, e a Tabela 2 reúne os números usados nas P1, P3 e P4.
+
+**Tabela 2 – Correlação dos retornos diários por regime de mercado**
+
+| País e regime | Dias | Correlação | IC 95% (*bootstrap*) |
+|---|---|---|---|
+| **EUA: S&P 500 x Treasury** | | | |
+| Período normal | 5.001 | −0,24 | [−0,30; −0,18] |
+| Crise nos EUA | 524 | −0,36 | [−0,46; −0,25] |
+| **Brasil: Ibovespa x NTN-B** | | | |
+| Período normal | 4.685 | +0,39 | [+0,34; +0,44] |
+| Qualquer crise | 840 | +0,43 | [+0,21; +0,60] |
+| Só crise local | 418 | +0,18 | [+0,09; +0,27] |
+| Só crise global | 111 | +0,43 | [+0,31; +0,59] |
+| Crise local e global | 311 | +0,56 | [+0,27; +0,71] |
+
+Fonte: elaborado pelos autores. Intervalos obtidos por *bootstrap* em blocos circular de 21 pregões, com 2.000 réplicas. A contagem de dias considera só os dias com retorno calculado, por isso o período normal tem um dia a menos que na Tabela 1.
+
+## 4.2 Caso de referência: EUA
+
+**P1.** Nos dias de crise, a correlação entre S&P 500 e Treasury é de −0,36, contra −0,24 no período normal. A diferença, de −0,12, tem intervalo de 95% entre −0,22 e −0,002 e é significativa tanto pelo *bootstrap* (p = 0,048) quanto pelo teste z de Fisher (p = 0,004). O resultado se mantém quando a crise é definida só pelo VIX acima de 30 (diferença de −0,16; p = 0,010), pelo percentil 90 do VIX (−0,14; p = 0,021) e quando o Treasury é trocado pelo ETF IEF (−0,16; p = 0,019).
+
+O resultado está de acordo com a definição de Baur e Lucey (2009): a correlação cai na crise e o valor resultante é negativo. A intensidade, porém, é bem menor que a dos dias de *flight to safety* de Baele et al. (2020), em que a correlação média chega a −58,5%. A diferença é esperada, pois aqui a crise é um regime que dura semanas, enquanto Baele et al. (2020) isolam dias de fuga, a maioria com duração de um único pregão.
+
+Duas ressalvas impedem um veredito pleno. A primeira é o viés de volatilidade: com o ajuste de Forbes e Rigobon (2002), a correlação de crise passa a −0,12, valor menos negativo que o do período normal. Parte da queda observada pode, portanto, refletir apenas o aumento da volatilidade das ações. A segunda é a sensibilidade ao método: com blocos de 63 pregões, o intervalo da diferença passa a incluir o zero (p = 0,059).
+
+Outro resultado chama atenção. Com o TIPS no lugar do Treasury nominal, a diferença desaparece (+0,02; p = 0,66), o que sugere que a proteção em crise vem do título nominal, e não de qualquer título do Tesouro americano.
+
+O período normal já apresenta correlação negativa, o que confirma o padrão descrito por Campbell, Sunderam e Viceira (2017) e Molenaar et al. (2024) para os anos posteriores a 2000. **Veredito: P1 sustentada, com ressalva.**
+
+**P2 (EUA).** A correlação móvel entre S&P 500 e Treasury diminui à medida que o VIX aumenta (Tabela 3). Cada ponto a mais no VIX reduz a correlação em 0,0078 (p < 0,001), ou seja, um VIX 10 pontos mais alto está associado a uma correlação cerca de 0,08 menor. Em termos de faixas, a correlação média passa de −0,19 nos dias com VIX abaixo de 15 para −0,46 nos dias com VIX acima de 40. O efeito se mantém com a correlação dos 22 pregões seguintes, especificação de Connolly, Stivers e Sun (2005), com tendência linear, com o logaritmo do VIX e com janelas de 21 e 126 pregões.
+
+**Tabela 3 – Regressão da correlação móvel sobre o VIX**
+
+| Especificação | EUA: coeficiente do VIX | p | Brasil: coeficiente do VIX | p |
+|---|---|---|---|---|
+| Principal (janela de 63 pregões) | −0,0078 | < 0,001 | +0,0023 | 0,36 |
+| Correlação dos 22 pregões seguintes | −0,0079 | < 0,001 | −0,0017 | 0,43 |
+| Com tendência linear | −0,0077 | < 0,001 | +0,0025 | 0,27 |
+| Janela de 21 pregões | −0,0099 | < 0,001 | +0,0013 | 0,53 |
+| Janela de 126 pregões | −0,0080 | < 0,001 | +0,0024 | 0,38 |
+
+Fonte: elaborado pelos autores. Erros-padrão de Newey e West (1987), com defasagens iguais ao tamanho da janela.
+
+O resultado replica Connolly, Stivers e Sun (2005) e Ohmi e Okimoto (2016) com dados até 2026. Como nesses estudos, o VIX explica a direção da correlação, mas uma parte pequena da sua variação: o R² é de 0,04. **Veredito: P2 sustentada na parte dos EUA.**
+
+## 4.3 Caso contrastante: Brasil
+
+**P2 (Brasil).** No Brasil, o VIX não tem efeito sobre a correlação entre Ibovespa e NTN-B. O coeficiente é de +0,0023 (p = 0,36; intervalo de 95% entre −0,0026 e +0,0072, que exclui o valor americano) e não se torna significativo em nenhuma das especificações da Tabela 3. A correlação média fica entre +0,31 e +0,42 em todas as faixas do VIX. A diferença entre os coeficientes dos dois países é significativa (p = 0,002). O padrão é o que Ohmi e Okimoto (2016) encontram para Portugal e Espanha, países em que o VIX deixou de explicar a mudança de regime da correlação. **Veredito: P2 sustentada.**
+
+**P3.** Em crise, a correlação entre Ibovespa e NTN-B é de +0,43, e o sinal positivo se mantém com o câmbio como controle (+0,36 com a PTAX do dia e +0,35 com a PTAX do dia e do dia seguinte). Na regressão do retorno da NTN-B sobre os retornos do Ibovespa e do câmbio, feita só com os dias de crise, o coeficiente do Ibovespa é de +0,089 (p < 0,001). Nas crises, portanto, a NTN-B se move junto com as ações, mesmo depois de descontado o efeito do câmbio.
+
+O resultado aparece em todos os títulos brasileiros testados: IMA-B 5+ (+0,37), IDkA IPCA 10 anos (+0,37) e IRF-M (+0,34), todos com controle pela PTAX. Como o IRF-M reúne títulos prefixados, o comportamento não depende de o título ser indexado à inflação. Em dólar, a correlação sobe para +0,78, pois o câmbio passa a pesar nos dois retornos. A evidência está de acordo com Molenaar et al. (2024), para quem a correlação é mais positiva onde o título é visto como arriscado, e com Hofmann, Shim e Shin (2020), que associam a depreciação cambial a perdas nos títulos em moeda local de emergentes.
+
+A ressalva é que a correlação também é positiva fora das crises (+0,39). A diferença entre crise e período normal, de +0,07 com o controle pela PTAX, não é significativa (intervalo de −0,14 a +0,25). O resultado, assim, vai além do que a P3 propunha: a NTN-B não deixa de proteger na crise, porque não protege em nenhum regime. O achado está próximo do de Cardoso e Garcia (2023), que encontram comovimento positivo entre títulos e ações no Brasil de 2015 a 2020 sem condicionar a análise a crises. **Veredito: P3 sustentada, com ressalva.**
+
+**P4.** O resultado contraria a proposição. Nas fases de só crise local, a correlação entre Ibovespa e NTN-B é de +0,18, abaixo das fases de só crise global (+0,43). A diferença, de −0,25, é significativa (intervalo de −0,43 a −0,11). A correlação de só crise local é também a mais baixa de todos os regimes, inclusive do período normal (+0,39).
+
+O sinal contrário se mantém com o percentil 90 do VIX (−0,30), quando se excluem os dias que seguem uma crise global (−0,30) e com o IMA-B 5+ (−0,24). Em três versões a diferença deixa de ser significativa: com o critério de queda acumulada em 21 pregões, com o IRF-M e com retornos em dólar. Em nenhuma das versões baseadas na queda do Ibovespa, porém, a crise local aparece com correlação maior que a global.
+
+A exceção vem da lista fixa de choques locais. Nos 21 pregões que se seguem à perda do grau de investimento (setembro de 2015), à abertura do processo de *impeachment* (dezembro de 2015), ao Joesley Day (maio de 2017) e à greve dos caminhoneiros (maio de 2018), a correlação é de +0,64, acima da crise global. Esses episódios somam só 84 dias, e o intervalo de 95% da diferença vai de −0,20 a +0,48, o que impede qualquer conclusão.
+
+Como a queda do Ibovespa mede o risco-país só de forma indireta, a P4 foi testada também com o EMBI+ Risco-Brasil, calculado pelo J.P. Morgan e divulgado pelo Ipeadata até julho de 2024. Duas definições foram fixadas antes de qualquer cálculo. Na primeira, a crise local é o dia em que o EMBI+ está acima do percentil 90 da amostra, 430 pontos-base. Esses dias se concentram em 2003 a 2005, fase de *spread* alto, mas em queda, e em 2015 e 2016. Com essa medida, o sinal contrário se repete: a correlação é de +0,23 na crise só local e de +0,60 na só global, diferença de −0,37 (intervalo de −0,56 a −0,01), que deixa de ser significativa com o controle pelo câmbio.
+
+Na segunda definição, a crise local é a abertura brusca do *spread*: alta do EMBI+ em 21 pregões acima do percentil 90, de 12,7%. É a medida mais próxima de um choque de risco-país, e seus dias se espalham por quase toda a amostra. Com ela, o sinal se inverte e passa a ser o previsto pela P4: +0,32 na crise só local contra +0,20 na só global. A diferença, de +0,12, não é significativa (intervalo de −0,07 a +0,30).
+
+O conjunto dos testes permite uma leitura. As medidas que marcam fases longas, de bolsa em queda (como 2013 a 2016 e 2021 a 2022) ou de *spread* alto, produzem o sinal contrário à P4. As que marcam choques, a lista fixa de eventos e a abertura brusca do EMBI+, produzem o sinal previsto, mas sem significância. O padrão que Dufour, Stancu e Varotto (2017) descrevem para a zona do euro pode existir nos choques de risco-país brasileiros, mas os dados não permitem afirmá-lo. **Veredito: P4 não sustentada.**
+
+## 4.4 O episódio de 2022
+
+A Figura 2 mostra a correlação de cada ano. Em 2022, a correlação entre S&P 500 e Treasury foi de +0,20, primeira vez desde 2006 que ela fica positiva em um ano inteiro. Nos demais anos de 2018 a 2023, ela foi de −0,28, e a diferença de +0,48 é significativa (intervalo de +0,25 a +0,66). Depois de 2022, a correlação americana oscilou perto de zero, entre −0,15 e +0,09 de 2023 a 2025, e chegou a +0,43 nos nove primeiros meses de 2026.
+
+**Figura 2 – Correlação dos retornos diários entre ações e título público, por ano (2004 a 2026)**
+
+![Figura 2](figuras/figura2_correlacao_por_ano.png)
+
+Fonte: elaborado pelos autores com dados de Yahoo Finance, Federal Reserve (H.15) e ANBIMA. O ano de 2026 vai até 30 de setembro.
+
+No Brasil, 2022 não destoa dos anos vizinhos: a correlação foi de +0,49, contra +0,66 no restante do período de 2018 a 2023, diferença que não é significativa. O resultado confirma o sinal que Mosk, Pangallo e Zema (2022) associam à inflação alta e ao aperto monetário. Em 2022, o Treasury passou a se comportar como a NTN-B se comporta desde o início da amostra, o que está de acordo com o papel que Molenaar et al. (2024) atribuem à inflação na relação entre ações e títulos.
+
+## 4.5 Robustez
+
+O Quadro 3 resume o que muda em cada teste de robustez. Os resultados das P2 e P3 são estáveis em todas as variações. O da P1 depende do título nominal e, em menor grau, do tamanho do bloco. O sinal contrário da P4 se repete nas definições de crise local que marcam fases longas e se inverte, sem significância, nas que marcam choques.
+
+**Quadro 3 – Resumo dos testes de robustez**
+
+| Variação | P1 (EUA) | P2 | P3 (Brasil) | P4 (Brasil) |
+|---|---|---|---|---|
+| Limiar de crise no percentil 90 do VIX | Mantém | Não se aplica | Mantém | Mantém o sinal contrário |
+| Só VIX > 30 como crise nos EUA | Mantém | Não se aplica | Não se aplica | Não se aplica |
+| Título alternativo (IEF; IMA-B 5+, IDkA) | Mantém | Não se aplica | Mantém | Mantém o sinal contrário |
+| Título real (TIPS) ou prefixado (IRF-M) | Desaparece | Não se aplica | Mantém | Diferença não significativa |
+| PTAX do dia e do dia seguinte | Não se aplica | Não se aplica | Mantém | Não se aplica |
+| Retornos brasileiros em dólar | Não se aplica | Não se aplica | Mantém | Diferença não significativa |
+| Blocos de 63 pregões | No limite (p = 0,059) | Não se aplica | Mantém | Mantém o sinal contrário |
+| Janelas de 21 e 126 pregões, correlação futura | Não se aplica | Mantém | Não se aplica | Não se aplica |
+| Crise local sem a cauda de crise global | Não se aplica | Não se aplica | Não se aplica | Mantém o sinal contrário |
+| Choques locais fixos (84 dias) | Não se aplica | Não se aplica | Não se aplica | Inverte, sem significância |
+| Crise local pelo nível do EMBI+ (até jul. 2024) | Não se aplica | Não se aplica | Não se aplica | Mantém o sinal contrário |
+| Crise local pela alta do EMBI+ em 21 pregões | Não se aplica | Não se aplica | Não se aplica | Inverte, sem significância |
+| Ajuste de Forbes e Rigobon | Desaparece | Não se aplica | Mantém o sinal positivo | Mantém o sinal contrário |
+
+Fonte: elaborado pelos autores. Detalhes em `resultados/robustez.csv` e, para o EMBI+, em `resultados/p4_embi.csv`.
+
+## 4.6 Discussão comparativa
+
+A replicação teórica exige que os casos produzam resultados opostos pelas razões previstas (YIN, 2015). Os resultados atendem à primeira parte dessa exigência. Nas crises, a correlação é negativa nos EUA (−0,36) e positiva no Brasil (+0,43). A incerteza medida pelo VIX reforça a proteção do Treasury e não tem efeito sobre a NTN-B. Os dois casos se comportam de forma oposta em todos os testes centrais.
+
+A segunda parte, a de que a razão seja o risco soberano, recebe apoio parcial. A favor dela, o padrão brasileiro se repete em títulos indexados e prefixados, resiste ao controle pelo câmbio e é o mesmo que a literatura descreve para os países de maior risco da zona do euro (DUFOUR; STANCU; VAROTTO, 2017; OHMI; OKIMOTO, 2016).
+
+Contra ela, a P4 não se confirmou: se o risco-país fosse o mecanismo, as crises de origem doméstica deveriam produzir correlações mais altas, e não mais baixas. A medida direta de risco-país, o EMBI+, atenua essa objeção sem eliminá-la: nos choques de *spread* a correlação sobe na direção prevista, mas a diferença não é significativa.
+
+Há também uma explicação rival para o comovimento brasileiro: os choques de juros. Uma alta inesperada da taxa básica derruba ao mesmo tempo o preço das ações e o dos títulos, o que tornaria a correlação positiva mesmo sem risco soberano. Molenaar et al. (2024) enfraquecem essa alternativa ao mostrar que inflação e juro real praticamente não explicam a correlação no Brasil, mas o resultado vem de dados mensais. Separar os dois mecanismos em frequência diária exigiria uma medida de surpresa monetária, fora do escopo deste estudo.
+
+O episódio de 2022 acrescenta um elemento à comparação. Ao ficar positiva com a inflação alta, a correlação americana mostrou que o papel de proteção do Treasury não é permanente e depende do regime macroeconômico (CAMPBELL; SUNDERAM; VICEIRA, 2017; MOLENAAR et al., 2024). Nos EUA, a proteção existe na maior parte do tempo e falha em períodos de inflação. No Brasil, a NTN-B não protege a carteira de ações em nenhum dos regimes analisados.
+
+# 5 CONCLUSÃO (rascunho v1)
+
+Este estudo perguntou se a correlação entre ações e títulos públicos se torna negativa nas crises, como prevê a hipótese de *flight to quality*, e se esse padrão observado nos Estados Unidos se repete no Brasil. A resposta é que não se repete. Com dados diários de 2003 a 2026, o Treasury de 10 anos protege a carteira de ações nas crises americanas, e essa proteção cresce com a incerteza do mercado. A NTN-B, ao contrário, anda junto com o Ibovespa nas crises e também fora delas.
+
+O veredito de cada proposição resume esse contraste. A P1 foi sustentada, com ressalva: a correlação entre S&P 500 e Treasury cai de −0,24 no período normal para −0,36 nas crises, mas parte dessa queda pode se dever ao aumento da volatilidade. A P2 foi sustentada: a correlação diminui com o VIX nos EUA e não reage a ele no Brasil. A P3 foi sustentada, com ressalva: a correlação entre Ibovespa e NTN-B é positiva nas crises, mesmo com o controle pelo câmbio, mas é igualmente positiva no período normal. A P4 não foi sustentada: as fases de crise só local tiveram correlação menor que as de crise só global, e nem a medida direta de risco-país, o EMBI+, produziu diferença significativa na direção prevista.
+
+A análise exploratória de 2022 mostrou que a proteção do Treasury também tem limites. Com o choque de inflação e o aperto monetário, a correlação americana ficou positiva no ano pela primeira vez desde 2006, e o título dos EUA passou a se comportar como o brasileiro. O papel de porto seguro, portanto, depende tanto do emissor quanto do regime macroeconômico.
+
+O estudo traz três contribuições. A primeira é testar a hipótese de *flight to quality* com o título doméstico brasileiro, em frequência diária e condicionando a análise às crises, lacuna apontada na seção 1.3. A segunda é mostrar que a ausência de proteção da NTN-B é uma característica de toda a amostra, e não apenas das crises, o que amplia a evidência de Cardoso e Garcia (2023) para um período mais longo e para vários índices de títulos. A terceira é oferecer um desenho reprodutível, com dados públicos e código aberto, que pode ser aplicado a outros emergentes.
+
+Para quem mantém carteiras que combinam ações e renda fixa brasileira, o resultado tem uma implicação direta. A NTN-B diversifica pouco justamente quando a proteção é mais necessária. Nesse caso, a cobertura pode precisar vir de outros ativos, como o dólar ou títulos de países considerados seguros, possibilidade que este estudo não testou.
+
+Os resultados têm limitações. O estudo de caso não permite generalização estatística, apenas analítica, e outros emergentes podem se comportar de forma diferente. A correlação é sensível à volatilidade, e o ajuste de Forbes e Rigobon (2002), usado como robustez, depende de hipóteses pouco plausíveis em crise. A NTN-B é um título real, enquanto o Treasury de 10 anos é nominal, diferença atenuada, mas não eliminada, pelos testes com o TIPS e o IRF-M. A amostra começa em 2003, o que deixa de fora as crises de 1998 e 2002, e o regime de crise só global reúne poucos dias. Por fim, a principal definição de crise local, pela queda do Ibovespa, mede o risco-país só de forma indireta. O teste com o EMBI+ reduz esse problema, mas a série pública termina em julho de 2024.
+
+Essas limitações indicam os próximos passos. Um estudo de evento em torno dos choques de risco-país, com o CDS de 5 anos, que cobre também o período recente, permitiria testar a P4 com amostras de choque maiores. Modelos de correlação condicional, como o DCC-GARCH, tratariam o viés de volatilidade de forma mais robusta. A inclusão de outros emergentes como novos casos, na mesma lógica de replicação, mostraria se o padrão brasileiro é próprio do país ou comum a mercados com risco soberano relevante.
+
 ---
 Notas para o grupo (remover antes da entrega):
-- **P4, definição operacional:** crise local = drawdown do Ibovespa ≤ −20% sem VIX acima do limiar. Verificar se há dias suficientes nessa categoria antes de fechar a proposição. A P4 tem base fraca na literatura (só Dufour et al., de forma indireta; ver `fichamento/matriz.md`). Alternativa a discutir: reformular a P4 em termos de risco soberano elevado (CDS de 5 anos do Brasil acima de 2%, limiar de Dufour et al., p. 13). Miyajima, Mohanty e Chan (2015) pode reforçar a P4, mas ainda depende do PDF.
 - **2022:** o texto não afirma mais "quedas simultâneas" de ações e Treasuries, porque nenhuma fonte fichada o documenta em texto. O box do BCE diz que a correlação "has increased recently"; confirmar o sinal no Gráfico A do box ou com os dados do próprio estudo na Etapa 4.
 - **P2, parte do Brasil:** nenhuma referência testa VIX x correlação em emergentes. A justificativa no texto é indireta (Molenaar et al.; Ohmi e Okimoto para os países de risco do euro). Deixar isso explícito na revisão de literatura.
 - **Seção 2.1, páginas:** Connolly, Stivers e Sun (2005) e Ohmi e Okimoto (2016) estão citados sem página porque foram lidos em versões não publicadas (preprint de 2003 e working paper de 2015), com paginação diferente da do periódico. Conferir nas versões publicadas se o grupo quiser citar com página.
 - **Seção 2.1, VIX de Connolly et al.:** o índice usado é o VIX antigo, calculado sobre opções do S&P 100 (hoje VXO). Mencionar na metodologia ao comparar o limiar de 30.
 - **Seção 2.2, páginas:** Dufour, Stancu e Varotto (2017) e Hofmann, Shim e Shin (2020) estão sem página pelo mesmo motivo (manuscrito aceito e working paper do BIS). As páginas de Cardoso e Garcia (2023) são as do PDF dos anais. Os números detalhados do Brasil (R² de 0,01, correlação canônica, Granger) saíram do texto ao juntar parágrafos e estão nas fichas, caso a discussão dos resultados precise deles.
 - **Seção 2.2, último parágrafo (decisão do grupo):** o texto declara que a busca foi feita em buscadores gerais e no SciELO. Se o grupo fizer as buscas diretas na RBFin, RBE, EconomiA e nos anais da SBE, ANPEC e SBFin, atualizar a frase e o `fichamento/log-buscas.md`.
-- **Seção 2.2, parágrafo 5:** se a P4 for reformulada com CDS acima de 2%, reescrever este parágrafo. Se Miyajima, Mohanty e Chan (2015) for fichado, entra no parágrafo 4 ou 5.
 - **Yin (2015):** conferir a página da replicação teórica num exemplar da Bookman antes de citar com página.
 - **Fontes de dados (decidido em 21/10/2026):** Treasury e TIPS de 10 anos vêm do H.15 do Federal Reserve; o VIX, da Cboe; S&P 500 e Ibovespa, do Yahoo Finance (citar S&P Dow Jones Indices e B3 como fontes primárias dos índices); NTN-B (IMA-B), da ANBIMA; e a PTAX, do Banco Central (SGS). O Yahoo Finance voltou à lista porque o S&P 500 do FRED só tem os últimos 10 anos e o Ibovespa do SGS foi descontinuado em 2019. Na seção de metodologia, citar as fontes primárias nas referências ABNT (detalhes em `codigo/resumo.md`).
+
+- **Seções 3 e 4 (rascunho v1, 2026-11-02):** números conferidos contra `resultados/` (gerados por `codigo/04_analise.ipynb`). Newey e West (1987) e Politis e Romano (1992) foram citados sem ficha; fichar ou conferir os dados da referência antes da entrega.
+- **Decisões de 2026-11-16 (fechamento do texto):** (1) P4 mantida como foi pré-registrada, com veredito "não sustentada"; o EMBI+ até jul. 2024 basta como robustez e o CDS de 5 anos fica como próximo passo (seção 5), sem nova coleta. (2) P3 e Quadro 1 mantidos como pré-registrados (não se reescreve hipótese depois do resultado); o achado mais forte, "a NTN-B não protege em nenhum regime", fica na 4.3, na discussão e na conclusão, como já está. (3) O BRL=X do Yahoo saiu da robustez da P3 por estar com data deslocada desde 2010; trocado pela PTAX do dia e do dia seguinte (crise +0,35, normal +0,28, diferença +0,08, IC95% [−0,15; +0,27]); conclusão inalterada. Ver `resultados/testes_proposicoes.csv`.
+- **Fontes de dados nas referências:** as cinco fontes primárias entraram em `referencias.md`. Conferir o formato ABNT de documento eletrônico com a norma do periódico escolhido.
+- **Resumo, abstract e conclusão (rascunho v1, 2026-11-02):** escritos com os vereditos atuais. Se a P4 ou a P3 mudarem, ajustar a frase correspondente nos três. Conferir o limite de palavras do resumo e o número de palavras-chave exigidos pelo periódico escolhido (hoje com cerca de 200 palavras e 5 palavras-chave).
+- **Literatura nova (busca de 2026-11-02, `fichamento/log-buscas.md`):** fichar Park, Fang e Ha (2019), base direta da P4 (Coreia: crise local, ações e títulos caem juntos; crise global, *flight to quality*), e citar na 2.2 e na 4.3. Localizar e citar Amorim et al. (2026), estudo brasileiro de crise x não crise com IMA-S e Ibovespa (mensal), na lacuna da 1.3, dizendo em que este artigo se diferencia.
